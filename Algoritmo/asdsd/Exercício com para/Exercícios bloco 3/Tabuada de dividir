@@ -1,0 +1,17 @@
+programa
+{
+
+	funcao inicio()
+	{
+		inteiro y,x,tab
+
+		escreva ("Digite um número : ")
+		leia (x)
+
+		para (y=x;y<=x*10;y=x+y){
+			tab = y/x
+			escreva (y, "/",x,"=",tab,"\n")			
+		}
+		
+	}
+}

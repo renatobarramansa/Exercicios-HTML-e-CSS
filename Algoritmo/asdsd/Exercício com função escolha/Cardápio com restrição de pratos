@@ -1,0 +1,82 @@
+programa
+{
+/*Uma lancheria está com alguns problemas para atender aos pedidos dos clientes. Não vai ser
+possível atender pedidos que tenham algumas combinações do cardápio, são elas:
+a) O lanche bauru não poderá ser acompanhado da bebida guaraná.
+b) Se o cliente pedir X galinha, não poderá pedir água.
+c) Quando o cliente pedir Pizza, somente poderá beber vinho ou água.
+Dessa forma, elabore um algoritmo que leia o lanche e a bebida e verifique se o pedido poderá ser
+ou não atendido*/
+	
+	funcao inicio()
+	{
+		inteiro lanche, bebida
+
+		escreva ("=========================Cardápio Lanche===================\n")		
+escreva ("||			1. Bauru		        ||\n")								  
+escreva ("||			2. Galinha      		|| \n")
+escreva ("||			3. Pizza                        ||\n")
+		escreva ("===========================================================\n")
+		
+
+		escreva ("Digite a opção desejada para escolher o lanche : ")
+		leia (lanche)
+		limpa ()
+		
+		escreva ("=========================Cardápio Bebida===================\n")		
+escreva ("			1. Guaraná\n")
+escreva ("			2. Água\n")
+escreva ("			3. Vinho\n")
+		escreva ("===========================================================\n")
+		escreva ("Digite a opção desejada para escolher a bebida : ")
+		leia (bebida)
+
+		escolha (lanche) {
+			caso 1:
+			pare
+
+			caso 2:
+			pare
+
+			caso 3:
+			pare
+
+			caso contrario :
+			escreva ("opção incorreta")
+			
+		}
+
+		escolha (bebida) {
+			caso 1:
+			pare
+
+			caso 2:
+			pare
+
+			caso 3:
+			pare
+
+			caso contrario:
+			escreva ("opção incorreta")
+			
+		}
+
+		se (lanche == 1 e bebida ==1){
+			escreva ("\nO pedido não poderá ser realizado")
+			
+		se ( lanche ==2 e bebida ==2) {
+			escreva ("\nO pedido não poderá ser realizado")
+		}
+		
+		se ( lanche ==3 e bebida ==1){
+			escreva ("\nO pedido não poderá ser realizado")
+		}
+		}
+		
+
+		senao {
+			escreva ("\nVocê pediu lanche ",lanche," e a bebida escolhida foi ",bebida)
+		
+		}
+		}
+	

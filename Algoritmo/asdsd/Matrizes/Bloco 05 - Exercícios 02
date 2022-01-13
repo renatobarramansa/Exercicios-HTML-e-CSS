@@ -1,0 +1,38 @@
+programa
+{
+	inclua biblioteca Util
+ -->u
+
+/*2. Elabore um algoritmo que leia uma matriz 4x4 de reais. Ao final, apresentar o resultado da
+subtração da soma dos elementos da primeira linha pela soma dos elementos da terceira coluna.*/	
+	funcao inicio()
+	{
+		inteiro somaLinha=0, somaColuna=0
+		real matriz [4][4]
+		
+
+		para  (inteiro x=0;x<4;x++){
+			para (inteiro y=0;y<4;y++){
+				matriz [x][y] = u.sorteia(1, 10)
+
+				se (x==0){
+					somaLinha = somaLinha + matriz[x][y]
+				}
+
+				se (y==2){
+					somaColuna = somaColuna + matriz[x][y]
+				}
+			}
+		}
+
+		para  (inteiro x=0;x<4;x++){		
+			para (inteiro y=0;y<4;y++){
+				escreva (matriz[x][y], "\t")
+			}
+			escreva ("\n")
+	}
+
+			escreva ( "A subtração da 1° linha pela 2° coluna é:",somaLinha - somaColuna)
+		}
+}
+

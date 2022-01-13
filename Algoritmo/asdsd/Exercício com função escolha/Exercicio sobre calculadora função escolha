@@ -1,0 +1,44 @@
+programa
+{
+/*CALCULADORA : Escreva um algoritmo para ler 2 valores e uma das seguintes operações para serem executadas
+codificada da seguinte forma : (1. Adição, 2.Subtração, 3.Divisão, 4.Multiplicação)
+Calcular e escrever o resultado dessa operação sobre os dois valores lidos*/	
+	funcao inicio()
+	{
+		inteiro n1, n2, ad, sub, div, mult, op
+
+		escreva ("Digite o primeiro número : ")
+		leia (n1)
+		escreva ("Digite o Segundo número : ")
+		leia (n2)
+		escreva ("\nEscreva a operação que deseja realizar\n1. Adição\n2. Subtração\n3. Divisão\n4. Multiplicação : ")
+		leia (op)
+
+				escolha (op){
+					caso 1:
+					ad = n1 + n2
+					escreva ("A opção escolhida foi soma, o resultado é : ", ad)
+					pare
+
+					caso 2:
+					sub = n1 - n2
+					escreva ("A opção escolhida foi subtração, o resultado é : ", sub)
+					pare
+
+					caso 3:
+					div = n1 / n2
+					escreva ("A opção escolhida foi divisão, o resultado é : ", div)
+					pare
+
+					caso 4:
+					mult = n1 * n2
+					escreva ("A opção escolhida foi multiplicação, o resultado é : ", mult)
+					pare
+
+					caso contrario:
+					escreva("Opção incorreta :")
+				}
+
+		
+	}
+}

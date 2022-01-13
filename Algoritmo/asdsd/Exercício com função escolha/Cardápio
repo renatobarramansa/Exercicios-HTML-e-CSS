@@ -1,0 +1,85 @@
+programa
+{
+	
+/*O cardápio da lanchonete é o seguinte :
+	
+	LANCHE			CÓDIGO		VALOR
+	Cachorro quente	101			1,20
+	Bauru Simples		102			1,30
+	Bauru com ovos		103			1,50
+	Hamburguer		104			1,20
+	Chesburguer		105			1,30
+	Refrigerante		106			1,00
+
+
+	Escrever um algoritmo que leia o código do item e a quantidade. Calcule o valor a ser pago por aquele lanche
+	informando algum código da lista, deve-se informar o código digitado é inválido
+	*/
+	
+	funcao inicio()
+	{
+
+	inteiro codItem, qnt
+	real pedido
+
+
+		escreva ("========================CARDÁPIO========================\n")
+		
+		
+		escreva ("LANCHE			CÓDIGO			VALOR\n")
+		escreva ("Cachorro quente		101			1,20\n")				
+		escreva ("Bauru Simples		102			1,30\n")
+		escreva ("Bauru com ovos		103			1,50\n")
+		escreva ("Hamburguer		104			1,20\n")
+		escreva ("Chesburguer		105			1,30\n")
+		escreva ("Refrigerante		106			1,00\n")
+		escreva ("==========================================================\n")
+		escreva ("Informe o código do item : ")
+		leia (codItem)
+
+		se (codItem >100 e codItem<107) {
+			
+		
+		escreva ("Informe a quantidade : ")
+		leia (qnt)
+
+		escolha (codItem) {
+			caso (101):
+			pedido = qnt * 1.20
+			escreva ("O item pedido foi cachorro quente, o valor é : ",pedido)
+			pare
+
+			caso (102):
+			pedido = qnt * 1.20
+			escreva ("O item pedido foi bauru simples, o valor é : ",pedido)
+			pare
+
+			caso (103):
+			pedido = qnt * 1.20
+			escreva ("O item pedido foi bauru com ovos, o valor é : ",pedido)
+			pare
+
+			caso (104):
+			pedido = qnt * 1.20
+			escreva ("O item pedido foi hamburguer, o valor é : ",pedido)
+			pare
+
+			caso (105):
+			pedido = qnt * 1.20
+			escreva ("O item pedido foi chessburguer, o valor é : ",pedido)
+			pare
+
+			caso (106):
+			pedido = qnt * 1.20
+			escreva ("O item pedido foi refrigerante, o valor é : ",pedido)
+			pare
+		}
+		}senao {
+			escreva ("Código incorreto :")	
+			}
+			
+
+			
+			
+		}
+	}

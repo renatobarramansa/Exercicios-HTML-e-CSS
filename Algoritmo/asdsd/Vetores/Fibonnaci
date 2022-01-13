@@ -1,0 +1,25 @@
+programa
+{
+/*Fazer um exercicio com vetor, e a sequencia fibonacci, que é a soma dos dois últimos números */	
+	funcao inicio()
+	{
+		inteiro n, fibo[25]
+		fibo[0] = 0
+		fibo[1] = 1
+
+		
+
+		para ( inteiro x=2;x<25;x++){
+			fibo [x] = fibo[x-1] + fibo [x-2]
+		
+			
+			}
+
+			para (inteiro x=0;x<25;x++){
+			
+			escreva (fibo[x],",")
+			
+			}
+
+		}
+}

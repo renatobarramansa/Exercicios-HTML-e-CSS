@@ -1,0 +1,24 @@
+programa
+{
+/*4. Escreva um algoritmo que leia uma medida em metros e converta para centímetros.
+*/
+	
+real convertido
+	
+	funcao inicio()
+	{
+		real metros, cent
+
+		escreva ("Digite em metros para transformar em centimetros")
+		leia (metros)
+		limpa ()
+		escreva (conversaoMetroCent(metros))
+		
+		
+	}
+
+	funcao real conversaoMetroCent (real m){
+		convertido = m * 100
+		retorne convertido
+	}
+}

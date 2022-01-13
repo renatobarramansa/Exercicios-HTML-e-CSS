@@ -1,0 +1,21 @@
+programa
+{
+/*17. Construa um algoritmo que mostre na tela:
+*****
+****
+***
+**
+**/	
+	funcao inicio()
+	{
+		inteiro x, y
+
+		para (x=1;x<=5;x++){ \\ Essa é a quantidade de linhas ela não decrementa
+			para (y=5;y>=x;y--){ \\ Essa é a quantidade de coluna, decrementa conforme o enunciado
+				escreva ("*")
+			}
+		escreva ("\n")
+		}
+		
+	}
+}

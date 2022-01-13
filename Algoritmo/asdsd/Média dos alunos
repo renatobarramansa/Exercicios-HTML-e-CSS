@@ -1,0 +1,30 @@
+programa
+{
+	
+/*
+	Escrever um algoritmo que leia o nome de um aluno e as notas das três provas que ele obteve no semestre. 
+	No finalinformar o nome do aluno e a sua média (aritmética)
+	
+	*/
+	funcao inicio()
+	{
+
+		cadeia nome
+		real n1,n2,n3,media
+
+		escreva ("Digite o nome do aluno : \n")
+		leia (nome)
+		limpa ()
+		escreva ("Digite a primeira nota : \n")
+		leia (n1)
+		limpa ()
+		escreva ("Digite a segunda nota : \n")
+		leia (n2)
+		limpa ()
+		escreva ("Digite a terceira nota : \n")
+		leia (n3)
+		limpa ()
+		media = (n1+n2+n3)/3
+		escreva ("O nome do aluno é: ",nome,"\nA media de suas notas é: ", media)
+	}
+}

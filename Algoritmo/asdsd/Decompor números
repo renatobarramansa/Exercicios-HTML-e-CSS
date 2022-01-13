@@ -1,0 +1,29 @@
+programa
+{
+	
+/*Elabore um algoritmo que decomponha o número 1738, informando ao usuário
+	o número de unidades, dezenas, centenas e milhares*/
+	funcao inicio()
+	{
+		inteiro x =1738,resto
+
+		resto = x%1000
+		x/=x 		
+		escreva ("\n",x," milhar")
+		
+		x = resto
+		resto = x%100
+		x=x/100		
+		escreva ("\n",x," centenas")
+
+		x=resto
+		resto = x%10
+		x=x/10
+		escreva ("\n",x," Dezenas")
+
+		x=resto
+		resto = x%1
+		x=x/1  //Ele dividido por ele mesmo
+		escreva ("\n",x," Unidades")
+	}
+}

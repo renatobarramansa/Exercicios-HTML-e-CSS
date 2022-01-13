@@ -1,0 +1,31 @@
+programa
+{
+/*Elabore um algoritmo que leia uma matriz 4x4 de reais. Ao final, apresentar o
+resultado da subtração dos elementos da primeira linha  pela soma dos
+elementos da terceira coluna.*/	
+	funcao inicio()
+	{
+		
+		real matriz [4][4], somaPrimeiraLinha=0.0, somaColuna=0.0
+		inteiro linha, coluna
+		
+
+		escreva ("Digite os elementos para preencher a matriz\n")
+		para (linha=0;linha<4;linha++){
+			para (coluna=0;coluna<4;coluna++){
+				leia (matriz[linha][coluna])
+
+				se (linha ==0){
+					somaPrimeiraLinha = somaPrimeiraLinha + matriz [linha][coluna]
+				}
+				
+				se (coluna ==2 ){					
+					somaColuna = somaColuna +  matriz[linha][coluna]
+				}
+			}
+		}
+		limpa ()
+			escreva ("A soma da coluna 3 é :", somaColuna,"\nA soma dos elementos da linha 1 é: ",somaPrimeiraLinha,"\nO Resultado é: ",somaPrimeiraLinha - somaColuna)
+	}
+	
+}

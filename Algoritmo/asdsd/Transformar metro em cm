@@ -1,0 +1,19 @@
+programa
+{
+	/* Crie um algoritmo que leia dois números e some os seus quadrados
+	*/
+	funcao inicio()
+	{
+		inteiro n1, n2, quadN1,quadN2, soma
+
+		escreva ("Digite o primeiro número: ")
+		leia(n1)
+		escreva ("Digite o segundo número: ")
+		leia(n2)
+		quadN1 = n1*n1
+		quadN2 = n2*n2
+		soma= quadN1+quadN2
+		escreva(soma)
+		
+	}
+}

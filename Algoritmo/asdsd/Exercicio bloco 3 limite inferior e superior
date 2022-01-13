@@ -1,0 +1,31 @@
+programa
+{
+	
+/*11. Elaborar um algoritmo que leia os limites inferior e superior de um intervalo e mostre todos os
+números pares no intervalo, bem como, o somatório dos pares. Suponha que os números digitados
+são um intervalo crescente. Exemplo:
+Limite inferior: 3
+Limite superior: 12
+Pares: 4 6 8 10
+Soma dos pares: 28*/
+
+	funcao inicio()
+	{
+		inteiro inf, sup, res, soma = 0, impar=0
+
+		escreva ("Digite o limite inferior : ")
+		leia (inf)
+		escreva ("Digite o limite superior : ")
+		leia (sup)
+
+		para (inteiro x=inf;x<sup;x++) {
+			res = x % 2
+			se (res == 0 ) {
+				soma = soma + x
+				escreva ("Pares :",x,"\n" )			
+			}
+						
+		}
+		escreva ("A soma dos pares é :",soma)
+	}
+}

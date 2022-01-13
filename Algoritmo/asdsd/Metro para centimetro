@@ -1,0 +1,15 @@
+programa
+{
+	/*Escreva um algoritmo que leia uma medida em metros e converta para centímetros.
+
+	*/
+	funcao inicio()
+	{
+		real metro, centimetro
+
+		escreva ("Digite a quantidade em metro")
+		leia (metro)
+		centimetro = metro*100
+		escreva (centimetro)
+	}
+}

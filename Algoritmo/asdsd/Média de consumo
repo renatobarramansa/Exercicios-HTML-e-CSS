@@ -1,0 +1,21 @@
+programa
+{
+	//Escrever   um   algoritmo   para   determinar   o   consumo   médio   de   
+	//um automóvel sendo fornecida a distância total percorrida pelo automóvel e o total de combustível gasto.
+	funcao inicio()
+	{
+		real kmp, combustivel, media
+
+		escreva ("\nDigite a kilometragem percorrida :")
+		leia (kmp)
+		limpa ()
+		escreva ("\nDigite  o combustível gasto :")
+		leia (combustivel)
+		limpa ()
+		media = kmp/combustivel
+		escreva ("A média de consumo do veículo é de :", media)
+		
+		
+	
+	}
+}

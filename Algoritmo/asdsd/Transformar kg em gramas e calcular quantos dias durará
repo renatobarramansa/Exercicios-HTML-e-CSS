@@ -1,0 +1,21 @@
+programa
+{
+	
+/*Desenvolva um algoritmo que receba uma quantidade de um alimento em quilos, calcule e
+mostre quantos dias durará esse alimento para uma pessoa que consome 50 gramas desse alimento
+por dia.*/
+	funcao inicio()
+	{
+		real kilos, dias, gramas = 50, kilosTransfGramas
+
+		escreva ("Digite os kilos dos alimentos : ")
+		leia (kilos)
+		kilosTransfGramas = kilos * 1000
+		dias = kilosTransfGramas/gramas
+
+		escreva (dias)
+		
+		
+		
+	}
+}

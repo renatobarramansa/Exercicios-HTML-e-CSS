@@ -1,0 +1,26 @@
+body {
+  height: 800px;
+  margin: 0px;
+}
+
+div {
+  border: 2px solid #ccc;
+  margin-top: 40px;
+  padding: 20px 20px 40px 20px;
+}
+
+span {
+  background: #e7e7e7;
+  border: 2px solid #ccc;
+  padding: 10px;  
+  position: absolute;
+  top: 0px;
+}
+
+.fixo{
+  position: fixed ;
+  top: 300px;
+  left: 38%;
+  right: 32px;
+  
+}

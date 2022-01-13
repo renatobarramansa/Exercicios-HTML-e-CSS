@@ -1,0 +1,47 @@
+body {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bt1{
+  text-decoration: none;
+  border-radius: 4px;
+  background: #f0d4ee;
+  padding: 5px 10px;
+  place-self: start;
+}
+
+.bt2{
+  text-decoration: none;
+  border-radius: 4px;
+  background: #11d7e6;
+  padding: 5px 10px;
+  place-self: start;
+}
+
+.grid1{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+}
+
+.grid2{
+  display: grid;
+  place-self: start;
+  gap: 10px;
+}
+
+.grid3{
+  display: grid;
+  place-self: start;
+  gap: 10px;
+}
+
+img {
+  max-width: 100%;
+  
+}
+h1{
+  grid-column: 1/-1;
+ 
+}

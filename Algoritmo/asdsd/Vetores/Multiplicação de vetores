@@ -1,0 +1,41 @@
+programa
+{
+/*Faça um algoritmo que leia 10 números inteiros e os
+armazene em um vetor.Depois o programa deve ler e imprimir na tela uma listagem
+com os múltiplos de 2, uma outra com os múltiplos de 3 e outra com os múltiplos
+de 5*/
+	
+	funcao inicio()
+	{
+		inteiro vetA[10],x,y,mult2, vetMult2[10],vetMult3[10], vetMult5[10], z, r
+
+		para (x=0;x<10;x++){
+
+		escreva ("Digite o ",x+1,"° número")
+		leia (vetA[x])
+		
+			}
+			
+			limpa ()
+			escreva ("==============Multiplos de 2==============\n")
+			para  (y=0;y<10;y++){
+							
+			vetMult2[y] = vetA[y] *2
+			escreva (vetA[y]," x 2 = ",vetMult2[y],"\n")
+		
+			}
+				escreva ("==============Multiplos de 3==============\n")
+				para (z=0;z<10;z++){
+				
+				vetMult3[z] = vetA[z] * 3
+				escreva (vetA[z]," x 3 = ",vetMult3[z],"\n")
+				}
+
+					escreva ("==============Multiplos de 5==============\n")
+					para (r=0;r<10;r++){
+					vetMult5[r] = vetA[r] * 5
+					escreva (vetA[r],"x 5 = ", vetMult5[r],"\n")
+					}
+						
+	}
+}

@@ -1,0 +1,20 @@
+programa
+{
+/*Escreva um algoritmo que leia dez valores numéricos inteiros e 
+apresente na tela o somatório dos valores e a média*/	
+	funcao inicio()
+	{
+		inteiro n1,cont = 1
+		real media = 0.0,soma=0.0
+		
+
+		enquanto (cont <=10) {
+			escreva ("Digite o ", cont, "° número : ")
+			leia (n1)			
+			soma = soma + n1
+			media = soma/2
+			cont++
+		}
+		escreva("\nO somatório dos números é: ",soma," a média é : ",media)
+	}
+}

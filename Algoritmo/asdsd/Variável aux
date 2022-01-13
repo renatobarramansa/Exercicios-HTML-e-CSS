@@ -1,0 +1,29 @@
+programa
+{
+/*Ler dois valores para as variáveis A e B,
+e efetuar as trocas dos valores de forma que a variável A passe a possuir ovalor da variável B
+e a variável B passe a possuir o valor da variável A. Apresentar os valores trocados*/	
+	funcao inicio()
+	{
+		inteiro varA, varB, varAux
+
+		escreva ("Digite valor de A: ")
+		leia (varA)
+		limpa()
+		escreva ("Digite valor de B: ")
+		leia (varB)
+		limpa()
+		escreva ("\nAntigo valor de A: ",varA)
+		escreva ("\nAntigo valor de B: ",varB)
+
+		varAux = varB
+		varB=varA
+		varA=varAux
+
+		escreva ("\n\nNovo valor de A: ",varA)
+		escreva ("\nNovo valor de B: ",varB)
+
+		
+		
+	}
+}

@@ -1,0 +1,20 @@
+programa
+{
+	
+/*Chico tem 1,50 e cresce 2 cm por ano
+	Zé tem 1,10 e cresce 3 cm por ano
+	Construa um algoritmo que calcule e imprima quantos anos serão necessários
+	até que zé seja maior que chico*/
+	funcao inicio()
+	{
+
+		real chico = 1.50, ze = 1.10
+		inteiro ano = 0
+
+		enquanto (ze <= chico){
+			ze = ze + 0.3
+			chico = chico + 0.2
+			ano = ano + 1
+		}
+	}
+}

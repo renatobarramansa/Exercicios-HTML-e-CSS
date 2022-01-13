@@ -1,0 +1,35 @@
+programa
+{
+
+	/*Uma escola deseja dividir os alunos de uma série em três turmas.
+	Entretanto, deverá*/
+	
+	funcao inicio()
+	{
+		inteiro turmaA, turmaB, turmaC,res, totalAlunos, mediaAlunos,media
+		
+
+		escreva ("digite o total de alunos")
+		leia(totalAlunos)
+		media=totalAlunos/3
+	//	res = totalAlunos%3
+
+		totalAlunos = totalAlunos - media		
+		turmaA = media
+		turmaB = totalAlunos - turmaA
+		turmaC = totalAlunos -turmaB
+
+		
+		
+		
+		//escreva("Olá Mundo")
+	}
+}
+
+		/*escreva ("Informe a quantidade de alunos na turma A")
+		leia (turmaA)
+		escreva ("Informe a quantidade de alunos na turma B")
+		leia (turmaB)
+		escreva ("Informe a quantidade de alunos na turma C")
+		leia (turmaC)
+*/

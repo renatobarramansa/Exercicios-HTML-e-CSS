@@ -1,0 +1,49 @@
+programa
+{
+/*Pegar a sequência de números e inverter a sequência
+sem usar vetores*/
+	inteiro extraido
+	
+	funcao inicio()
+	{
+
+		inteiro nr
+
+		escreva ("Digite um número")
+		leia (nr)
+
+		se (nr >0) {
+			invertePositivo (nr)
+		}
+		senao {
+			
+			inverteNegativo(nr)
+		}
+		
+	}
+	
+	funcao invertePositivo (inteiro n1){
+		faca {
+			extraido = n1 % 10
+			escreva (extraido)
+			n1 = n1 / 10	
+		
+		}
+		enquanto (n1 != 0)
+	}
+
+	funcao inverteNegativo (inteiro n2){
+		n2=n2*-1
+		escreva ("-")
+		faca {
+			
+			extraido = n2 % 10
+			escreva (extraido)
+			n2 = n2 / 10	
+		
+		}
+		enquanto (n2 != 0)
+	}
+	
+	}
+

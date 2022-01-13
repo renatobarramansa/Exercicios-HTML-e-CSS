@@ -1,0 +1,49 @@
+programa
+{
+/*Intensivo função  : Alistamento com todos os inputs como função*/
+	
+	funcao inicio()
+	{
+		inteiro idade
+		caracter sexo
+
+		idade = lerIdade() // Passando a informação da idade por parâmetro
+		sexo = lerSexo() // Passando a informação do sexo por parâmetro
+
+		se (Alist(idade, sexo )==1){
+			escreva ("Alistamento obrigatório")
+		}
+
+		senao {
+			escreva ("Você não possui requisitos para o alistamento obrigatório")
+		}
+
+		
+	}
+
+	funcao inteiro lerIdade (){
+		inteiro idade
+		
+		escreva ("Informe a idade")
+		leia (idade)
+		retorne idade
+	}
+
+	funcao caracter lerSexo (){
+		caracter sexo
+		
+		escreva ("Informe o sexo")
+		leia (sexo)
+		retorne sexo
+	}
+
+	funcao inteiro Alist (inteiro id, caracter sx){
+
+		se (id==18 e sx=='m'){			
+			retorne 1
+		}
+		senao {			
+			retorne 0
+		}
+	}
+}

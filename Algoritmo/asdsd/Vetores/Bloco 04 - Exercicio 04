@@ -1,0 +1,35 @@
+programa
+{
+/*4. Escreva um algoritmo que leia uma lista de salários dos funcionários de uma empresa. Após, o
+algoritmo deverá aplicar um aumento de 10% somente sobre salários abaixo de R$ 1.500,00.
+Mostrar na tela a lista dos salários.
+*/
+	
+	funcao inicio()
+	{
+		inteiro cont=0, conty=0
+		real sal=0.0, lisSalComAumento[10], lisSalSemAumento[10], lisSal[10]
+
+		para (inteiro x=0;x<10;x++){
+			cont ++
+			escreva ("Digite o ",cont,"° salário")
+			leia (sal)
+			lisSal [x] = sal
+
+			se (sal<1500){
+			
+			lisSalComAumento[x] = sal + (sal * 0.1)
+				
+			}
+			senao {
+				lisSalSemAumento [x] = sal
+			}
+		}
+
+		para (inteiro y=0;y<10;y++){
+			conty++
+			escreva (conty,"° salário, valor: ",lisSal[y],"\n")
+		}
+		
+	}
+}

@@ -1,0 +1,19 @@
+programa
+{
+
+	/*Elabore um algoritmo que leia o valor do lado do quadrado e 
+	 * calcule a área. Em seguida, calcule
+o dobro da área. Mostre a área e o dobro.*/
+	funcao inicio()
+	{
+		inteiro ldQuadrado, areaQuad, dobroArea
+
+		escreva ("Informe o valor do lado do quadrado : ")
+		leia(ldQuadrado)
+		areaQuad = ldQuadrado*ldQuadrado
+		dobroArea = areaQuad * 2
+
+		escreva ("A área do quadrado é : ",areaQuad)
+		escreva ("\nO dobro da área do quadrado é : ",dobroArea)
+	}
+}

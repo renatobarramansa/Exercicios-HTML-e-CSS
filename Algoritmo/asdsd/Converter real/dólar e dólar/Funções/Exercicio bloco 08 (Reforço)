@@ -1,0 +1,40 @@
+programa
+{
+	inclua biblioteca Util
+ -->u
+/*Para obter a soma de um intervalo de números*/
+	
+	
+	
+	funcao inicio()
+	{
+		inteiro tamVet
+
+		escreva ("Digite o tamanho do vetor")
+		leia (tamVet)
+
+		inteiro vetor [10]
+		
+		
+		
+		para (inteiro x=0;x<10;x++){
+		vetor [x] = u.sorteia (1,10)		
+		}
+
+		
+		escreva ("A soma dos elementos do vetor é :", chamarVetor(vetor, tamVet))
+	}
+
+	funcao inteiro chamarVetor (inteiro vetFunc [], inteiro tamanho ) {
+
+		inteiro soma
+		se ( tamanho <= 1) {
+			retorne vetFunc[0]
+		}
+		
+		senao {
+
+			retorne vetFunc[tamanho - 1] + chamarVetor(vetFunc,tamanho-1)
+		}
+	}
+}

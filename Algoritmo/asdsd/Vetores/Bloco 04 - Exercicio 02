@@ -1,0 +1,21 @@
+programa
+{
+/*/*2. Construa um algoritmo que leia uma lista correspondente aos preços unitários dos produtos de
+uma loja de material esportivo. Ao final, o algoritmo deverá mostrar o valor total em estoque da
+loja. */	
+	funcao inicio()
+	{
+
+		inteiro  prodLoja [5], vlrUnit, cont=0
+		real valorTotal = 0.0
+
+		
+			para (inteiro x=1;x<5;x++){
+			cont++
+			escreva ("Informe o valor do ",cont,"° produto")
+			leia (vlrUnit)
+			prodLoja[x] = vlrUnit
+			valorTotal = valorTotal + prodLoja [x]
+		}
+	}
+}

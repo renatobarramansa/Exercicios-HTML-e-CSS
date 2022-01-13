@@ -1,0 +1,31 @@
+programa
+{
+/*Um motorista de taxi deseja calcular o rendimento de seu carro na praça. Sabendo-se que o
+preço do combustível é de R$ 2,50, escreva um algoritmo para ler: a marcação do odômetro (Km)
+no início do dia, a marcação (Km) no final do dia, o número de litros de combustível gasto e o valor
+total (R$) recebido dos passageiros. Calcular e escrever: a média do consumo em Km/L e o lucro
+(líquido) do dia*/
+	
+	funcao inicio()
+	{
+		real marcOdometroInicial, marcOdometroFinal, litrosCombGasto, valorRecebidoPass,mediaConsumo, prCombustivel = 2.50,lucroDia
+
+		escreva ("Digite a marcação inicial do odômetro : ")
+		leia (marcOdometroInicial)
+		escreva ("Digite a marcação final do odômetro : ")
+		leia (marcOdometroFinal)
+		escreva ("Quantidade de litros de combustível gasto")
+		leia (litrosCombGasto)
+		escreva ("Digite o valor recebido pelos passageiros : ")
+		leia (valorRecebidoPass)
+
+		/*// Aqui eu acho a média de consumo, que é a distância dividido pela quantidade gasta de combustível*/
+		mediaConsumo = (marcOdometroFinal-marcOdometroInicial)/litrosCombGasto 
+		lucroDia = valorRecebidoPass - (litrosCombGasto * prCombustivel)
+
+		escreva (mediaConsumo,"\n")
+		escreva (lucroDia,"\n")
+
+		
+	}
+}

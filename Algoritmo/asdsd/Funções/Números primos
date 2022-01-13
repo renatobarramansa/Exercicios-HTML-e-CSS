@@ -1,0 +1,43 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro y, quantidade=0
+		
+		para (y=0;y<=500;y++){
+			se ( eprimo(y) == 1){
+				escreva (y,"\t")
+				quantidade++
+			}
+
+			se (quantidade ==10){
+				escreva("\n")
+				quantidade = 0
+			}
+		}
+		
+	}
+
+	funcao inteiro eprimo (inteiro n){
+
+		inteiro divisores = 0
+
+		para (inteiro x=1;x<=n;x++){
+			se ( n % x == 0 ){
+				divisores ++
+
+				}
+			}
+
+			se (divisores == 2){
+				retorne 1			
+			}
+			senao {
+				retorne 0
+			}
+
+			
+		
+	}
+}

@@ -1,0 +1,48 @@
+body {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+h1{
+  grid-column: 1/-1;
+  text-align: right;
+  
+}
+
+.foto {
+max-width: 100%;
+grid-area: 2/2;
+
+}
+
+.preco {
+  text-decoration: none;
+  background: #d7d7d7;
+  color: black;  
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.comprar {
+  text-decoration: none;
+  background: #a17dff;
+  border: solid 1px #a17dff;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.grid1{
+  display: grid;  
+  gap: 10px;
+  place-items: start;
+  place-self: center;
+
+}
+
+.grid2 {
+  display: grid;  
+  gap: 10px;
+  grid-template-columns: repeat(2,1fr);
+  
+}

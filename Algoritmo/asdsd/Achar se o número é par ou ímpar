@@ -1,0 +1,26 @@
+programa
+{
+	\\tewt fdfd
+	funcao inicio()
+	{
+		inteiro divisao, n1,n2, res
+
+		escreva ("Digite o primeiro número\n")
+		leia (n1)
+		escreva ("Digite o segundo número\n")
+		leia (n2)
+		limpa ()
+		divisao = n1/n2
+		res = divisao % 2
+			
+			se (res == 0) {
+			escreva ("O número digitado é par")
+			
+
+			}senao {
+			escreva ("O número digitado é impar:")
+		}
+		
+		
+	}
+}

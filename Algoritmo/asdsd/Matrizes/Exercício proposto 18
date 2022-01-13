@@ -1,0 +1,46 @@
+programa
+{
+/*Gerar e imprimir uma matriz de tamanho 10x10, onde seus elementos são da forma:
+A[i][j] = 2i + 7j - 2 se i<j
+A[i][j] = 3i² -1 se i=j
+A[i][j] = 4i³ - 5j² + 1 se i > j
+
+*/
+	
+	funcao inicio()
+	{
+		inteiro matriz [10][10]
+
+		
+		para (inteiro i=0;i<10;i++){
+			para (inteiro j=0;j<10;j++){
+			escreva ("Digite um número para preencher o vetor na ", i+1,"° linha e na ",j+1,"° coluna\n")
+			leia (matriz[i][j])
+			limpa()
+			
+				se (i<j){
+					matriz[i][j] = 2*i + 7*j -2
+				}
+
+				se (i==j){
+					matriz [i][j] = 3*(i*i)-1
+				}
+
+				se (i>j){
+					matriz[i][j] = 4*(i*i*i) - 5*(j*j)+1
+				}
+			}
+
+			
+		}
+
+		
+			para (inteiro i = 0;i<10;i++){
+				para (inteiro j=0;j<10;j++){
+					escreva (matriz[i][j],"\t")
+			}
+			escreva ("\n")
+			
+		}
+	}
+}

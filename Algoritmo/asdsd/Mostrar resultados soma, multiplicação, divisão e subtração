@@ -1,0 +1,20 @@
+programa
+{
+//Faça um algoritmo que receba dois números e ao final mostre a soma, subtração, multiplicação e a divisão dos números lidos.	
+	funcao inicio()
+	{
+		inteiro n1,n2,soma,subtracao,multiplicacao,divisao
+
+		escreva ("\nDigite o primeiro número : ")
+		leia (n1)
+		limpa ()
+		escreva ("\nDigite o segundo número : ")
+		leia (n2)
+		limpa ()
+		soma = n1 + n2
+		subtracao = n1 - n2
+		multiplicacao = n1*n2
+		divisao = n1 /n2
+		escreva ("\nO resultado da soma é : ",soma,"\nO resultado da subtração é :",subtracao,"\nO resultado da multiplicação é : ",multiplicacao,"\nO resultado da divisão é : ", divisao)
+	}
+}

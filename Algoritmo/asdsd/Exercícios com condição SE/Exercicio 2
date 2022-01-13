@@ -1,0 +1,21 @@
+programa
+{
+/*O valor do livro na promoção custa 12,00, caso o usuário compre menos que 10 livros. Se comprar mais  o valor passa a ser R$ 8,00
+Escreva um algoritmo que escreva o número de livros comprados e defina qual valor será cobrado e quanto o cliente deverá pagar*/
+	
+	funcao inicio()
+	{
+		inteiro qntComprada
+		real livroDesconto = 8.00, livrosemdesconto=12.00
+
+		escreva ("\nDigite a quantidade de livros que irá comprar")
+		leia (qntComprada)
+
+		se (qntComprada>10) {
+		livroDesconto = livroDesconto * qntComprada
+
+		}senao{
+		livrosemdesconto = livrosemdesconto * qntComprada
+	}
+}
+}

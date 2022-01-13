@@ -1,0 +1,113 @@
+programa
+{
+/*8. Escreva um algoritmo que simule uma eleição. O algoritmo deverá ficar lendo votos enquanto
+não for digitada a condição de saída. A condição de saída é o usuário digitar o valor 6. Limpar a tela
+e mostrar novamente a tela da eleição a cada voto.
+Veja a tela do algoritmo
+-----------------------------------------------
+| E L E I Ç Ã O – sistema de votação |
+-----------------------------------------------
+1. Votar em João
+2. Votar em Maria
+3. Votar em Marcos
+4. Votar em branco
+5. Anular o voto
+6. Finalizar a votação
+Na construção do algoritmo devemos criar os seguintes procedimentos:
+funcao vazio montarTela() monta a tela apresentada acima.
+funcao vazio computarVoto(inteiro voto) acrescenta o voto para um candidato.
+funcao vazio apurarEleicao() mostra os resultados da eleição, após finalizar.
+Quando finalizar a votação, o procedimento apurarEleicao() deve apresentar a tela de apuração,
+conforme exemplo abaixo (notem que os valores informados são hipotéticos):
+-----------------------------------------------
+| E L E I Ç Ã O – resultado final |
+-----------------------------------------------
+João: 10 (10%) votos.
+Maria: 25 (25%) votos.
+Marcos: 15 (15%) votos.
+Brancos: 30 (30%) votos.
+Nulos: 20 (20%) votos.
+Total de votos: 100*/
+	
+	inteiro voto,joao=0, maria=0, marcos=0, branco=0, nulo=0, contVoto=0
+	
+	funcao inicio()
+	{
+			montarTela()						
+			}
+
+	funcao montarTela (){
+		faca {
+		escreva ("=========Sistema de Eleição=========\n")
+		
+		escreva ("(1) João\n")
+		escreva ("(2) Maria\n")
+		escreva ("(3) Marcos\n")
+		escreva ("(4) Branco\n")
+		escreva ("(5) Anular o voto\n")
+		escreva ("(6) Finalizar a votação\n")
+		leia(voto)
+		contVoto++		
+
+		
+		se (voto ==6) {
+			contVoto--
+		}
+		computarVoto()		
+		
+		
+	}enquanto(voto <6 e voto >=0)	
+
+	apurarVotacao()
+	
+	}
+
+	funcao computarVoto () {
+
+			escolha (voto){
+				caso 1:
+				joao++
+				pare
+
+				caso 2:
+				maria++
+				pare
+
+				caso 3:
+				marcos++
+				pare
+	
+				caso 4:
+				branco++
+				pare
+	
+				caso 5:
+				nulo++
+				pare
+			} 
+		}
+
+	funcao apurarVotacao (){
+		inteiro porcJoao = 0, porcMaria=0, porcMarcos=0, porcBrancos=0, porcNulos=0
+		
+		
+			porcJoao = (joao * 100)/contVoto
+			porcMaria = (maria * 100 ) / contVoto
+			porcMarcos = (marcos * 100) / contVoto
+			porcBrancos = (branco * 100) / contVoto
+			porcNulos = (nulo * 100 ) / contVoto
+			
+			escreva ("====== Resultado da eleição ======\n")		
+			escreva ("-----------------------------------\n")
+			escreva ("João :",joao," (",porcJoao,"%) votos.\n")
+			escreva ("Maria :",maria," (",porcMaria,"%) votos.\n")				
+			escreva ("Marcos :",marcos," (",porcMarcos,"%) votos.\n")		
+			escreva ("Brancos :",branco," (",porcBrancos,"%) votos.\n")
+			escreva ("Nulos :",nulo," (",porcNulos,"%) votos.\n")
+			
+		
+
+		
+	}
+			
+}

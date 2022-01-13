@@ -1,0 +1,39 @@
+programa
+{
+/*Desenvolva um algoritmo que receba dois valores numéricos inteiros, calcule e mostre a soma do
+quadrado desses dois números.*/
+	
+	funcao inicio()
+	{
+		inteiro v[2],v1[2]
+
+		para (inteiro x=0;x<1;x++){
+			escreva ("Digite o ",x+1,"° número")
+			leia (v[x])
+		}
+
+		para (inteiro x=0;x<1;x++){
+			escreva ("Digite o ",x+2,"° número")
+			leia (v1[x])
+		}
+
+		quadrado(v, v1)
+	}
+	
+	
+funcao quadrado (inteiro a[], inteiro b[]) {		
+		
+		inteiro quad = 0
+		
+		para (inteiro x=0;x<1;x++){		
+			quad = (a[x] *a[x] ) 		
+		}
+		
+		para (inteiro x=0;x<1;x++){
+		
+			quad = quad + (b[x]*b[x])
+					
+		}
+		escreva ("A soma dos quadrados é igual a : ",quad)
+	}
+}

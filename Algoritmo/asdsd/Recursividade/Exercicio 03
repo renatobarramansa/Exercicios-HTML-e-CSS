@@ -1,0 +1,30 @@
+programa
+{
+
+/*Use recursividade e faça potenciação*/
+	
+	funcao inicio()
+	{
+
+		inteiro b, p
+
+		escreva ("Digite a base")
+		leia (b)
+		escreva ("Digite a potência")
+		leia (p)
+
+		escreva (pot(b, p))
+		
+	}
+
+	funcao inteiro pot (inteiro b, inteiro p){
+		inteiro resultado
+
+		se (b==0 ou p==0){
+			retorne 1
+		}
+		
+		resultado = b * pot(b, p-1)
+		retorne resultado
+	}
+}

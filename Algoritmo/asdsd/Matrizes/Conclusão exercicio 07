@@ -1,0 +1,58 @@
+programa
+{
+/*7. Uma escola deseja saber, em uma turma de 10 alunos, quantos estão cursando, simultaneamente,
+as disciplinas de Lógica de Programação e Modelagem de Sistemas. O algoritmo deverá ler as
+matrículas dos alunos que estão cursando Lógica em um vetor de inteiros. Em outro vetor de
+inteiros ler as matrículas dos alunos que estão cursando Modelagem. Após, o algoritmo deverá
+calcular e mostrar a quantidade de alunos que estão cursando as duas disciplinas.*/
+	
+	funcao inicio()
+	{
+		inteiro logica[10], modelagem[10], matric[10], curso, total=0
+
+		
+		
+		para (inteiro x=0;x<10;x++){
+			escreva("Digite a Matricula:")
+			leia (matric[x])			
+			
+			
+				faca {
+				
+				escreva ("Olá matricula ",matric[x],"\nDeseja se cadastrar para a disciplina de lógica ?\nDigite 1 para se cadastrar ou 0 para sair")			
+				leia (curso)
+
+				se (curso == 1){						
+				logica [x] = matric[x]
+				limpa()
+							
+					}
+				
+				}
+				enquanto (curso !=0 e curso !=1) 
+
+
+				faca {
+				
+				escreva ("Olá matricula ",matric[x],"\nDeseja se cadastrar para a disciplina de Modelagem ?\nDigite 2 para se cadastrar ou 0 para sair")			
+				leia (curso)
+
+				se (curso == 02){				
+				modelagem [x] = matric[x]
+				limpa()
+				}
+				
+				}
+				enquanto (curso !=0 e curso !=2) 
+				
+				
+				se (modelagem[x] == logica [x]){
+				total++
+				}
+
+				limpa()
+								
+		}
+		escreva ("O total de matriculas iguais em cursos diferentes são :", total,"\n")
+	}
+}

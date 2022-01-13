@@ -1,0 +1,33 @@
+programa
+{
+/*Sequencia fibonnaci
+	o enesimo termo é a soma dos últimos termos
+*/	
+	funcao inicio()
+	{
+		inteiro termo
+
+		escreva ("Qual termo deseja saber")
+		leia (termo)
+
+		escreva ("\nO ",termo,"° termo é : ",fibo(termo))
+		
+	}
+
+	funcao inteiro fibo (inteiro termo){
+
+		se (termo ==1) {
+			retorne 0
+		}
+		senao {
+			se (termo ==2){
+				retorne 1
+			}
+			senao {
+				retorne fibo(termo-1) + fibo(termo-2)
+			}
+			
+				
+		}
+	}
+}

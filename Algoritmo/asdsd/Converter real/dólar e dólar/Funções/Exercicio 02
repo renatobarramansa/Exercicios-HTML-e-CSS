@@ -1,0 +1,27 @@
+programa
+{
+/*Construa um algoritmo que leia 4 notas e mostre a média.*/	
+	real somaNotas = 0.0
+	funcao inicio()
+	{
+		inteiro notas[4], mediaVetor
+		
+		para (inteiro x=0;x<4;x++){
+			escreva ("Digite a ",x+1,"° nota : ")
+			leia (notas[x])
+			
+		}
+		limpa()
+		media(notas)
+		
+	}
+	
+	funcao media
+ (inteiro v[]) {
+		para (inteiro x=0;x<4;x++){			
+			somaNotas = (somaNotas + v[x])		
+			
+		}
+		escreva ("A média das notas é : ",somaNotas/4)	
+	}
+}

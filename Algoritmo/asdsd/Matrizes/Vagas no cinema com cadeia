@@ -1,0 +1,65 @@
+
+programa
+{
+	inclua biblioteca Util -->u
+	
+/*Faça um programa para reservar assentos em uma sala de cinema.
+A sala possui 25 filas com 30 assentos cada fila. O programa deve funcionar
+enquanto houver assentos vagos ou não for digitado um número determinado
+para sair*/
+
+	funcao inicio()
+{
+		cadeia matriz [3][10]
+		inteiro  x, y, linha=0, coluna=0, reserva=0, sim=100
+		
+		para (x=0;x<3;x++){
+			para (y=0;y<10;y++){
+				matriz[x][y] = "vazio"
+			}
+		}
+		
+			escreva(" 0      1      2     3     4    5     6      7     8    9\n")
+		
+			para (x=0;x<3;x++){
+				para (y=0;y<10;y++){
+			escreva (matriz[x][y],",")
+				}
+			escreva(" ",x,"\n")
+			}
+		
+		faca{		
+			escreva ("\nDigite o valor da linha : ")
+			leia(linha)
+				enquanto (linha >3 ou linha <0){
+					escreva ("A linha digitada está incorreta:\nDigite novamente o valor da linha")
+					leia(linha)
+					}
+				
+			escreva("\nDigite o valor da coluna : ")
+			leia(coluna)						
+				enquanto (coluna >9 ou coluna <0) {
+					escreva("\nA linha digitada está incorreta:\nDigite o valor da coluna : ")
+					leia(coluna)		
+				
+				}							
+					
+				se (matriz[linha][coluna]=="ocupado"){					
+					escreva ("O local escolhido, já foi ocupado")
+				}
+				senao {
+					matriz[linha][coluna] = "ocupado"
+					reserva++
+				}
+				sim++
+				enquanto (sim<0 ou sim>1){
+				escreva("\nDeseja inserir uma nova reserva ?\nDigite 0 para sair\nDigite 1 para continuar")
+				leia(sim)
+				
+				
+				}		
+			}enquanto (reserva <=30 e sim !=0)	
+
+				escreva ("Você saiu do programa, ou as reservas acabaram")
+	}
+}

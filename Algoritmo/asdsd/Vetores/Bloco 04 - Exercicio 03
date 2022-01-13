@@ -1,0 +1,27 @@
+programa
+{
+/*3. Sabendo-se que a média de aprovação em uma disciplina é 6, escreva um algoritmo que leia uma
+lista de 10 médias de alunos. Logo a seguir, apresente na tela a quantidade de alunos que obtiveram
+aprovação e a quantidade de alunos que ficaram em recuperação na disciplina. */	
+	funcao inicio()
+	{
+		inteiro listaAprovado [10], listaReprovado[10], media, cont=0, contReprovado=0,contAprovado=0
+		real totalMedia, nota
+
+		para (inteiro x=0;x<10;x++){
+			cont ++
+			escreva ("Digite a ",cont,"° media")
+			leia (media)
+
+			se (media <=6){
+				contReprovado++
+				listaReprovado [x] = media
+			}
+
+			senao {
+				contAprovado++
+				listaAprovado [x] = media
+			}
+		}
+	}
+}

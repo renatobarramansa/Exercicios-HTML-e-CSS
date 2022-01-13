@@ -1,0 +1,25 @@
+/*Construir um laço de repetição, de forma que leia o conteúdo do vetor*/
+
+programa
+{
+	inclua biblioteca Util
+ -->U
+	
+	
+	inteiro tam
+	
+	funcao inicio()
+	{
+		
+		para (inteiro x=0;x<=7;x++) {			
+		
+		caracter nome [] = {'P', 'O', 'R', 'T', 'U', 'G', 'O', 'L'}
+		tam = U.numero_elementos(nome) // Conta a quantidade de elementos do vetor
+
+		U.aguarde(500) // Limita a velocidade de execução do programa, não precisa atribuir a nenhuma variável
+		escreva (nome[x],"\n")
+		
+		
+	}
+	}
+}

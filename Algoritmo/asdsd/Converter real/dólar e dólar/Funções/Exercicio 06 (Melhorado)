@@ -1,0 +1,75 @@
+programa
+{
+	inclua biblioteca Util -->u
+	inclua biblioteca Matematica
+ --> m
+
+	
+	
+	funcao inicio()
+	{
+		real n1=0.0,n2=0.0,n3=0.0,n4=0.0,n5=0.0,n6=0.0
+
+		para (inteiro x=0;x<1000000;x++) {
+
+			escolha (dado()){
+				caso 1:
+				n1++
+				pare
+
+				caso 2:
+				n2++
+				pare
+
+				caso 3:
+				n3++
+				pare
+
+				caso 4:
+				n4++
+				pare
+
+				caso 5:
+				n5++
+				pare
+
+				caso 6:
+				n6++
+				pare
+			}
+			
+		
+		
+			
+		}
+
+		escreva ("O 1 foi sorteado ",n1," vezes, o percentual em relação ao número total é de : ",porc(n1),"\n")
+		escreva ("O 2 foi sorteado ",n2," vezes, o percentual em relação ao número total é de : ",porc(n2),"\n")
+		escreva ("O 3 foi sorteado ",n3," vezes, o percentual em relação ao número total é de : ",porc(n3),"\n")
+		escreva ("O 4 foi sorteado ",n4," vezes, o percentual em relação ao número total é de : ",porc(n4),"\n")
+		escreva ("O 5 foi sorteado ",n5," vezes, o percentual em relação ao número total é de : ",porc(n5),"\n")
+		escreva ("O 6 foi sorteado ",n6," vezes, o percentual em relação ao número total é de : ",porc(n6),"\n")
+		escreva ("O total de números sorteados foi de :",total(n1,n2,n3,n4,n5,n6),"\n")
+		escreva ("O total de porcentagem foi de :",porc(n1)+ porc(n2) + porc(n3) + porc(n4) + porc(n5) + porc(n6),"\n")
+		
+	}
+	
+	funcao inteiro dado ()
+ {
+		inteiro sort
+		sort = u.sorteia(1, 6)
+		retorne sort
+	}
+
+	funcao real porc (real n) {
+		retorne (n/1000000)*100
+				
+	}
+
+	funcao real total(real a1,real a2,real a3,real a4,real a5,real a6) {
+		real soma 
+		soma = a1+a2+a3+a4+a5+a6	
+		retorne soma
+	}
+	
+}

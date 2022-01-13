@@ -1,0 +1,18 @@
+programa
+{
+/*Chico tem 1,50 metro e cresce 2 centímetros por ano, enquanto Zé tem 1,10 metro e cresce 3
+centímetros por ano. Construa um algoritmo que calcule e imprima quantos anos serão necessários
+para que Zé seja maior que Chico.*/	
+	funcao inicio()
+	{
+		inteiro x
+		real chico = 1.50, ze = 1.10
+
+		para (x=0;chico>=ze;x++){
+			chico = chico + 0.2
+			ze = ze + 0.3
+			
+		}
+		escreva(x)
+	}
+}

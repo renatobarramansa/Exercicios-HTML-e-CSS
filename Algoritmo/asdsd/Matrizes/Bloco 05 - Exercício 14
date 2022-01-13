@@ -1,0 +1,19 @@
+programa
+{
+/*14. Crie uma matriz 7X8 onde cada elemento é a soma dos índices de sua posição dentro da matriz*/
+	
+	funcao inicio()
+	{
+		real matriz[7][8]
+
+		para (real x=0.0;x<7;x++){	
+			
+			para (real y=0.0;y<8;y++){		
+			
+			escreva ("[",x+y,"]\t")
+							
+			}
+			escreva ("\n")
+		}
+	}
+}

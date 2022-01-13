@@ -1,0 +1,22 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real deposito, juros, dias ,saque, valorComJuros, diasJuros
+
+		escreva ("Digite o valor do depósito: \n")
+		leia(deposito)
+		limpa()
+		escreva ("Digite o valor que deseja sacar\n")
+		leia(saque)
+		escreva ("Quantos dias o valor ficou depositado\n")
+		leia(dias)
+		limpa()
+		diasJuros = dias * 0.233333
+		valorComJuros = deposito + diasJuros
+		escreva ("O valor que tem a receber é: \n",valorComJuros)
+		
+		
+	}
+}

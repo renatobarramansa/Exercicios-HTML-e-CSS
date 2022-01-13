@@ -1,0 +1,41 @@
+programa
+{
+	inclua biblioteca Util
+ -->u
+/*Teste ordenação de vetor*/
+	
+	funcao inicio()
+	{
+		
+		inteiro vetor[30], aux, troca = 0
+		
+		para (inteiro x=0;x<30;x++){
+			vetor[x] = u.sorteia(1, 999)
+		}
+
+		escreva ("======== Vetor desordenado ========\n")
+
+		para (inteiro x=0;x<30;x++){
+			escreva(vetor[x],", ")
+		}
+
+		escreva ("\n======== Vetor ordenado ========\n")
+
+		faca {
+			troca = 0 // Quando o vetor tiver todo ordenado, ele continuará valendo 0 e sairá do enquanto
+			para (inteiro x=0;x<30-1;x++){ // Ele roda aqui 29 vezes, depois sai e altera o valor de troca percorrendo todo o vetor		
+				se (vetor[x] > vetor[x+1]){
+					aux = vetor[x]
+					vetor[x] = vetor[x+1]
+					vetor[x+1] = aux
+					troca = 1
+				}
+			
+		}
+		}enquanto (troca == 1)
+		
+		para (inteiro x=0;x<30;x++){
+			escreva(vetor[x],", ")
+		}
+	}
+}

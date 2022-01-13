@@ -1,0 +1,16 @@
+programa
+{
+/* Faça um algoritmo para transformar uma distância expressa em milhas para quilômetros. Sabe-se
+que um km corresponde a 0,6214 milhas.*/
+	
+	funcao inicio()
+	{
+		real milhas, km
+
+		escreva ("Digite a distância em milhas")
+		leia (milhas)
+		km = milhas / 0.6214
+		escreva (km)
+		
+	}
+}

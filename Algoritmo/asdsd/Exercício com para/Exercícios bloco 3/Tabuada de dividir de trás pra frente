@@ -1,0 +1,16 @@
+programa
+{
+/*Fazendo tabuada de dividir, de trás pra frente*/	
+	funcao inicio()
+	{
+		inteiro x, y, tab
+
+		escreva ("Digite um número : ")
+		leia(x)
+
+		para (y=x*10;y>=x;y=y-x){
+			tab = y/x
+			escreva(y,"/",x," = ",tab,"\n")
+		}
+	}
+}

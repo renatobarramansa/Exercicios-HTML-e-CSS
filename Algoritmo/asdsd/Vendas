@@ -1,0 +1,31 @@
+programa
+{
+	
+/*
+	Escrever um algoritmo que leia o nome de um vendedor, o seu salário fixo
+	e o total de vendas efetuadas por ele nomês (em dinheiro).
+	Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas,
+	informar oseu nome, o salário fixo e salário no final do mês.	
+	*/
+	
+	funcao inicio()
+	{
+
+		cadeia nome
+		real salario, vendas, salariofinal, comissao = 0.15
+
+		escreva ("Escreva seu nome:\n")
+		leia(nome)
+		limpa()
+		escreva ("Digite o seu salário fixo: \n")
+		leia(salario)
+		limpa()
+		escreva ("Digite o valor de sua venda no mês: ")
+		leia (vendas)
+		limpa ()
+		salariofinal = salario + vendas * comissao
+		escreva ("\nO salario final recebido pelo funcionário ",nome," foi de: ",salariofinal)
+		
+		
+	}
+}

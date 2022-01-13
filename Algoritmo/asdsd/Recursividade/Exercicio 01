@@ -1,0 +1,26 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro x
+
+		escreva ("Digite o valor de x")
+		leia (x)
+
+		escreva ("O valor de fatorial é :",fat(x))
+		
+	}
+
+	funcao inteiro fat (inteiro x) {
+		inteiro resultado 
+		se (x==0 ou x==1){
+			retorne 1
+		}
+		senao {
+			resultado = x*fat(x-1)
+			retorne resultado
+		}
+		
+	}
+}

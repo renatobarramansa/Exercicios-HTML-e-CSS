@@ -1,0 +1,31 @@
+body {
+    font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;  
+}
+
+.grid2 {
+  display: grid;  
+}
+
+h1 {
+  grid-column: 1/-1;  
+}
+
+.bicicleta {
+  max-width: 100%;
+}
+
+.vermais {
+  background: coral;
+  text-decoration: none;
+  place-self: start;
+  border-radius: 4px;
+  padding: 5px 10px;  
+  
+}

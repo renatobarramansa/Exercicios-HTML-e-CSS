@@ -1,0 +1,21 @@
+programa
+{
+	inclua biblioteca Util
+ -->u
+/*4. Elabore um algoritmo que leia um vetor de 15 elementos inteiros. O algoritmo deverá verificar
+quantos valores são maiores que 10 e mostrar na tela.*/	
+	funcao inicio()
+	{
+		inteiro vetor [15], cont=0
+
+		para (inteiro x=0;x<15;x++){
+			vetor [x] = u.sorteia(1, 100)
+
+			se (vetor[x] > 10) {
+				cont++
+				escreva (vetor[x],"\t")
+			}
+		}
+		escreva ("\nExistem ",cont," valores maiores que 10")
+	}
+}

@@ -1,0 +1,36 @@
+programa
+{
+	inclua biblioteca Util
+ --> u
+/*7. Elabore um algoritmo que receba um vetor de n posições, logo após implemente uma função que
+receba o vetor e o tamanho dele e calcule de forma recursiva a soma dos elementos deste vetor*/
+	
+	funcao inicio()
+	{
+
+		inteiro vetor [10]
+		
+		para (inteiro x=0;x<10;x++){
+			vetor [x] = u.sorteia(1, 10)
+		}
+
+		escreva ("A soma dos vetores é: ", vetorFunc(vetor, 10))
+		
+	}
+
+	funcao inteiro vetorFunc (inteiro v[], inteiro tamanho){
+
+		se (tamanho<=1){
+			retorne v[0]	
+		
+		
+		
+		}senao {
+			
+			retorne v [tamanho -1] + vetorFunc(v, tamanho-1)
+
+		}
+
+	}
+		
+}

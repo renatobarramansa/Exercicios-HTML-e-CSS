@@ -1,0 +1,27 @@
+/*Ler um valor e somar os anteriores*/
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro x
+
+		escreva ("Digite um número positivo")
+		leia (x)
+
+		escreva ("A soma dos valores é :", soma(x))
+		
+	}
+
+	funcao inteiro soma (inteiro x ){
+		inteiro resultado
+
+		se (x>0){
+			resultado = x + soma (x-1)
+			retorne resultado
+		}senao {
+			retorne 0
+		}
+	}
+}

@@ -1,0 +1,26 @@
+programa
+{
+/*1. Elabore um algoritmo que leia uma lista de 10 valores numéricos inteiros quaisquer. Feito isso,
+escreva na tela o maior e menor valor informado */	
+	funcao inicio()
+	{
+		inteiro vlNum [10], maior=0, menor = 200
+
+		
+		para (inteiro x=0;x<=9;x++) {
+			
+			
+			escreva ("Digite um número")
+			leia (vlNum[x])
+				se (vlNum[x]>maior) {
+					maior = vlNum[x]			
+				}
+
+				se (vlNum[x]<menor) {
+					menor = vlNum[x]
+				}
+		}
+
+		escreva (menor,"\n",maior)
+	}
+}

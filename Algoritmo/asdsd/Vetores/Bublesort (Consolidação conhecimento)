@@ -1,0 +1,43 @@
+programa
+{
+	inclua biblioteca Util
+ --> u
+/*Bublesort*/
+	
+	funcao inicio()
+	{
+		inteiro vetor[10], aux, troca=0	
+			para (inteiro x=0;x<10;x++){
+				vetor[x] = u.sorteia(1, 30)
+			
+		}
+
+			escreva ("Vetor desordenado\n")
+			para (inteiro x=0;x<10;x++){
+				escreva (vetor[x],", ")
+			}
+
+			escreva ("\nVetor ordenado\n")	
+			
+			faca {
+			
+			troca = 0
+			
+			para (inteiro x=0;x<10-1;x++){
+				se (vetor[x] > vetor[x+1]){				
+				aux = vetor[x]
+				vetor[x] = vetor[x+1]
+				vetor[x+1] = aux
+				troca = 1
+				}
+			}
+			}enquanto (troca ==1)	
+
+			
+		
+			para (inteiro x=0;x<10;x++){
+				escreva (vetor[x],", ")
+			}
+		
+	}
+}

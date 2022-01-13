@@ -1,0 +1,26 @@
+programa
+{
+	inclua biblioteca Util
+ -->u
+/*11. Faça um algoritmo para ler uma matriz 
+ * de 3×4 de números reais e depois exibir o elemento do
+canto superior esquerdo e do canto inferior.*/	
+	funcao inicio()
+	{
+	
+	inteiro matriz[3][4]
+
+		para (inteiro x=0;x<3;x++){
+			para (inteiro y=0;y<4;y++){
+				matriz[x][y] = u.sorteia (1,100)	
+			}
+		}
+		para (inteiro x=0;x<3;x++){
+			para (inteiro y=0;y<4;y++){
+				escreva (matriz[x][y],"\t")
+			}
+			escreva("\n")
+		}
+	escreva ("Elemento do canto superior esquerdo: ",matriz[0][0],"\nElemento do canto inferior esquerdo: ",matriz[2][0])
+	}
+}

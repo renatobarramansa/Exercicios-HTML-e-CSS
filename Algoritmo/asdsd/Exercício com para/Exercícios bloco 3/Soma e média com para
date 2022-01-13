@@ -1,0 +1,18 @@
+programa
+{
+/*1. Escreva um algoritmo que leia dez valores numéricos inteiros e apresente na tela o somatório dos
+valores.*/	
+	funcao inicio()
+	{
+	inteiro soma=0, n1
+
+				
+		para (inteiro x=1;x<11;x++){
+			escreva ("Digite um número : ")
+			leia (n1)
+			soma = soma + n1
+			
+		}
+	escreva (soma)
+	}
+}

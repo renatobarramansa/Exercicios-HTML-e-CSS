@@ -1,0 +1,21 @@
+Algoritmo "Nome e telefone"
+//Teste 2 do commit
+//Teste 3 do commit
+
+Var
+// Seção de Declarações das variáveis 
+nome:caracter
+telefone:inteiro
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+          escreval ("Digite seu nome ")
+          leia (nome)
+          escreval ("Digite seu telefone")
+          leia (telefone)
+          escreval ("O nome que você digitou foi,",nome)
+          escreval ("O telefone que você digitou foi,",telefone)
+          escreval ("O cadastro digitado foi :",nome,telefone)
+
+Fimalgoritmo

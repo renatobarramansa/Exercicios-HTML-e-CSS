@@ -1,0 +1,76 @@
+programa
+{
+/*14. Em uma eleição presidencial existem quatro candidatos. Os votos são informados por meio de
+um código (representando os candidatos). Os códigos utilizados são:
+1- João
+2- Maria
+3- Pedro
+4- Marcos
+5- Nulo
+6- Em branco
+7 - Para sair do programa
+Escreva um algoritmo que calcule e mostre:
+a) o total de votos para cada candidato;
+b) o total de votos nulos;
+c) o total de votos em branco;
+d) o percentual de nulos em relação ao total de votos;
+e) o percentual de brancos em relação ao total de votos.*/	
+	funcao inicio()
+	{
+		inteiro voto=0, joao=0, maria=0, pedro=0, marcos=0, nulo=0, branco=0,percNulos=1, percBrancos=1, contVotos=0
+		
+
+		escreva("Digite as seguintes opções para votar.\n1 - João\n2 - Maria\n3 - Pedro\n4 - Marcos\n5 - Nulo\n6 - Em branco\n7 - Sair do programa\n")
+		leia(voto)
+		limpa ()
+
+		enquanto (voto < 7 e voto!=0) {
+		
+			contVotos++
+
+			escolha (voto) {
+				caso 1:
+				joao++
+				pare
+
+				caso 2:
+				maria++
+				pare
+
+				caso 3:
+				pedro++
+				pare
+
+				caso 4:
+				marcos++
+				pare
+
+				caso 5:
+				nulo++				
+				pare
+
+				caso 6:
+				branco++
+				pare
+
+				
+
+			}
+		
+				
+		escreva("Digite as seguintes opções para votar.\n1 - João\n2 - Maria\n3 - Pedro\n4 - Marcos\n5 - Nulo\n6 - Em branco\n7 - Sair do programa\n")
+		leia(voto)
+		percNulos = (nulo * 100)/contVotos
+		percBrancos = (branco * 100)/contVotos	
+		limpa ()
+		}
+		escreva ("João recebeu o total de: ",joao," votos\n")
+		escreva ("Maria recebeu o total de: ",maria," votos\n")
+		escreva ("Pedro recebeu o total de: ",pedro," votos\n")
+		escreva ("Marcos recebeu o total de: ",marcos," votos\n")
+		escreva ("Houveram o total de : ",nulo," votos nulos\n")
+		escreva ("Houveram o total de : ",nulo," votos em branco\n")
+		escreva ("O percentual de votos nulos em relação ao total é: ",percNulos,"%\n")
+		escreva ("O percentual de votos em branco em relação ao total é: ",percBrancos,"%\n")
+	}
+}

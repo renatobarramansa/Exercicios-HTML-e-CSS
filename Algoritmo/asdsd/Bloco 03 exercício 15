@@ -1,0 +1,29 @@
+/*Criar tabuada aninhada, com para dentro de para, de divisão e multiplicação*/
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro x, y
+
+		para (x=1;x<=10;x++) {
+						
+			para (y=1;y<=10;y++) {
+				escreva (x, "x", y, "=", x*y,"\n")
+				
+			}
+			
+		}
+
+		para (x=1;x<=10;x++){
+
+			para (y=1;y<=10;y++){ //Incrementa 1, 10 vezes
+				escreva (y*x,"/", x,"=", (y*x)/x,"\n") // Incrementa de 1 a 9 
+			}
+			}
+				
+			
+		}
+	}
+

@@ -1,0 +1,43 @@
+programa
+{
+//	inclua biblioteca Matematica --> m
+
+/*7. Elabore um algoritmo que leia duas listas de 10 elementos:
+a) a primeira lista contendo os nomes dos times.
+b) a segunda lista contendo a pontuação dos times.
+
+Ao final, apresentar na tela o time campeão (com pontuação) e o último colocado (com pontuação)
+no campeonato.
+*/
+	funcao inicio()
+	{
+		cadeia nome, vetNomes[5], camp, reb
+		inteiro pontos , vetPontos[5], maior=0, menor = 200
+		
+		para (inteiro x=0;x<5;x++){
+			escreva ("Digite os nomes\n")
+			leia (nome)
+
+			escreva ("Digite a pontuação\n")
+			leia (pontos)
+
+			vetNomes [x] = nome
+			vetPontos [x] = pontos
+
+			 se (maior<pontos){
+			 	maior = pontos
+			 	camp = vetNomes [x]
+			 }
+			 	
+			 se (menor>pontos){
+			 	menor = pontos
+			 	reb = vetNomes [x]
+			 }
+
+			
+			
+		}
+		escreva (menor,"\n")
+		escreva (maior)
+	}
+}

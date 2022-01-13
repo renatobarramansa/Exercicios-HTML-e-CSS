@@ -1,0 +1,28 @@
+programa
+{
+	inclua biblioteca Util --> u
+	
+
+/*Faça um algoritmo que:
+
+a) preencha 2 vetores a e b de cinco posições, com números inteiros
+b) atribua a um vetor res a soma dos vetores A e B
+c) mostre os valores do vetor res.*/	
+
+	funcao inicio()
+	{
+		inteiro vetA[5], vetB[5], vetRes[5], numSortVetA, numSortVetB
+
+		para (inteiro x=0;x<5;x++){
+			numSortVetA = u.sorteia(0, 500)			
+			vetA[x] = numSortVetA
+
+			numSortVetB = u.sorteia(500, 1000)
+			vetB[x] = numSortVetB
+
+			vetRes[x] = vetB[x] + vetA[x]
+		}
+
+		
+	}
+}

@@ -1,0 +1,89 @@
+programa
+{
+	inclua biblioteca Util
+ --> u
+/*12. Ler uma matriz 4X3 real e imprimir a soma dos elementos de uma linha L fornecida pelo
+usuário.
+*/
+	
+	funcao inicio()
+	{
+		inteiro matriz[4][3], n, soma=0
+
+		para (inteiro x=0;x<4;x++){
+			para (inteiro y=0;y<3;y++){
+
+			matriz[x][y] = u.sorteia(1, 5)
+		}
+
+		
+		}
+
+		para (inteiro x=0;x<4;x++){
+			para (inteiro y=0;y<3;y++) {
+
+			escreva (matriz[x][y],"\t")
+		}
+		escreva ("\n")
+	}
+
+	
+	escreva ("Escolha a linha que deseja somar os elementos: ")
+	leia (n)
+	
+	faca {
+		se (n<=0 ou n>=5){
+			escreva ("Você digitou uma opção errada, por favor escolha as opções de 1 a 4\n ")
+			escreva ("Escolha a linha que deseja somar os elementos: ")
+			leia (n)
+			limpa ()
+		}
+		
+	
+escolha (n) {
+		caso 1:
+		para (inteiro x=0;x<1;x++){
+			para (inteiro y=0;y<3;y++){
+				soma = soma + matriz[x][y]
+				
+		
+			}
+		escreva ("A soma da linha ",x+1," foi : ",soma)	
+		}
+		
+		pare
+		
+		caso 2:
+		para (inteiro x=1;x<2;x++){
+			para (inteiro y=0;y<3;y++){
+				soma = soma + matriz[x][y]
+		
+			}
+		escreva ("A soma da linha ",x+1," foi : ",soma)		
+		}
+		pare
+
+		caso 3:
+		para (inteiro x=2;x<3;x++){
+			para (inteiro y=0;y<3;y++){
+				soma = soma + matriz[x][y]
+		
+			}
+			escreva ("A soma da linha ",x+1," foi : ",soma)	
+		}
+		pare
+
+		caso 4:
+		para (inteiro x=3;x<4;x++){
+			para (inteiro y=0;y<3;y++){
+				soma = soma + matriz[x][y]
+		
+			}
+			escreva ("A soma da linha ",x+1," foi : ",soma)	
+		}
+		pare
+	}
+		
+	}enquanto (n<=0 ou n>=5)
+}
+}

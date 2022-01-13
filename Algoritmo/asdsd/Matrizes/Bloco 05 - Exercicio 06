@@ -1,0 +1,29 @@
+programa
+{
+	inclua biblioteca Util -->u
+/*6. Escreva um algoritmo que leia dois vetores de 10 elementos. O primeiro vetor será utilizado para
+ler o nome dos alunos de uma turma. O segundo vetor para ler as médias dos alunos da turma. Os
+índices dos dois vetores são correspondentes, ou seja, o aluno da posição 3 do vetor de nomes
+corresponde ao valor da posição 3 do vetor de médias. Ao final, o algoritmo deverá mostrar os
+nomes e médias dos alunos com média menor que 6.
+*/
+	
+	funcao inicio()
+	{
+		cadeia nomes[3]
+		real  medias [3], notas
+
+		para (inteiro x = 0;x<3;x++){
+			escreva ("Digite o ",x+1,"° nome : ")
+			leia (nomes[x])
+			escreva ("Digite a ",x+1,"° média : ")
+			leia (medias[x])
+			}
+
+			para (inteiro x = 0;x<3;x++){
+			se (medias[x]<6){
+				escreva ("O aluno: ",nomes[x]," ficou reprovado com a média: ",medias[x],"\n")
+			}
+				}
+	}
+}

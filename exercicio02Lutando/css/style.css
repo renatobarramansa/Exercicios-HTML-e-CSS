@@ -1,0 +1,40 @@
+body{
+  background: #f7f7f7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);  
+  grid-template-rows: repeat(4, auto);
+  place-content: enter;
+  gap: 10px;
+}
+
+.botao {
+  
+  place-self: start right;  
+  background: #ee2211;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 30px;
+  border-radius: 4px;
+  grid-area: 3/1;
+}
+p{
+  font-size: 30px;
+  margin: 0%;
+  grid-area: 2/1;
+  text-align: right;
+  place-self: center;
+}
+
+.titulo{
+  margin: 0%;
+}
+
+img{
+  margin: 0%;
+  max-width: 100%;
+  border-radius: 4px;
+  grid-area: 2/2;
+}

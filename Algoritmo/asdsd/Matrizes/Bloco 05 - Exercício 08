@@ -1,0 +1,34 @@
+programa
+{
+	inclua biblioteca Util --> u
+
+/*8. Faça um algoritmo para ler uma matriz 3X3 real e imprimir a soma dos elementos da Diagonal
+principal. Generaliza para uma matriz NXN.*/	
+	funcao inicio()
+	{
+		inteiro matriz [3][3], somaDiag=0
+
+		para (inteiro x=0;x<3;x++){
+			para (inteiro y=0;y<3;y++){
+				matriz[x][y] = u.sorteia(1, 100)
+			}
+		
+		
+		
+		
+		}
+
+		para (inteiro x=0;x<3;x++){
+			para (inteiro y=0;y<3;y++){
+				se (matriz[x][y] == matriz [0][0] ou matriz[x][y] == matriz [1][1] ou matriz[x][y] == matriz [2][2] ){
+				somaDiag = somaDiag + matriz[x][y]
+			}
+			}
+
+		}
+	
+	}
+
+	
+		
+	}

@@ -1,0 +1,44 @@
+programa
+{
+/*Intensivo função : Crie um programa com função para alistamento militar*/
+		inteiro idade=0
+		caracter sexo='a'
+	
+	funcao inicio()
+{
+		
+		inputs()
+
+		se (alist(idade, sexo) == 1){
+			escreva ("Alistamento obrigatório !")
+		}
+
+
+		senao {
+			escreva ("Você não apresenta requisitos legais para o alistamento")
+		}
+		
+		
+	}
+
+	funcao inputs () {
+		
+		
+		escreva ("Digite a idade")
+		leia (idade)
+		escreva ("Digite m para MASCULINO ou f para FEMININO")
+		leia (sexo)
+		
+	}
+
+	funcao inteiro alist (inteiro id, caracter sx){
+
+		se (id==18 e sx == 'm'){
+			retorne 1
+		}
+
+		senao {
+			retorne 0
+		}
+	}
+}

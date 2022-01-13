@@ -1,0 +1,43 @@
+programa
+{
+/*20. Faça um algoritmo que leia um inteiro n e imprima um tabuleiro de xadrez ou damas com lado
+n. Represente casas pretas por um "X" e casas brancas por um "O". Ex: n = 4
+O X O X
+X O X O
+O X O X
+X O X O*/	
+	funcao inicio()
+	{
+		inteiro n, cont1=0, cont2=0
+
+		escreva ("Digite um número")
+		leia (n)
+		
+		para (inteiro x=1;x<=n;x++) {
+			cont1++
+			
+			se (cont1 % 2 ==0) {
+			escreva ("x")	
+			}
+			senao {
+				escreva("0")
+			}
+			
+			
+			para (inteiro y=1;y<n;y++) {
+			cont2++
+			se (cont2 % 2 ==0) {
+			escreva ("0")	
+			}
+			senao {
+				escreva("X")
+			}
+			se (n %2 !=0){
+				n--
+			}
+			}
+			escreva ("\n")	
+			
+		}
+	}
+}

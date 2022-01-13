@@ -1,0 +1,23 @@
+Algoritmo "Some dois números"
+
+var
+   n1:inteiro
+   n2:inteiro
+   n3:inteiro
+   n4:inteiro
+
+
+inicio
+
+      escreval ("Digite o primeiro numero")
+      leia (n1)
+      escreval ("Digite o segundo numero")
+      leia (n2)
+      escreval ("Digite o terceiro numero")
+      leia (n3)
+      escreval ("Digite o quarto numero")
+      leia (n4)
+      escreva ("A soma dos quatro números são:",n1+n2+n3+n4)
+
+
+fimalgoritmo

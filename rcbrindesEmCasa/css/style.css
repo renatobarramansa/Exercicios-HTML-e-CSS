@@ -1,0 +1,84 @@
+body {
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #efefef;
+  border: solid #ff5411;
+ 
+}
+.topo {
+  display: grid;
+  grid-template-columns:auto; 
+  grid-template-rows: 200px;
+  grid-area: 1/1;
+  border: solid 4px #272626;
+  place-items: right;
+  place-content: center;
+  border-radius: 10px;
+  background-color: #272626;
+  margin-bottom: 10px;
+}
+
+.menu {
+  display: grid;  
+  gap: 5px;  
+  grid-template-columns:406px 406px 406px 406px;
+  grid-template-rows: auto repeat(3, 405.98px);
+}
+.gin {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: coral;
+  font-size: 30px;
+  grid-area: 1/1;
+  place-self: start;
+}
+
+.caneca {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: coral;
+  font-size: 30px;
+  grid-area: 1/2;
+  place-self: center;  
+}
+
+.uisque {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: coral;
+  font-size: 30px;
+  grid-area: 1/3;
+  place-self: start;
+}
+
+.canecaJateada {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: coral;
+  font-size: 30px;
+  grid-area: 1/4;
+  place-self: start;
+}
+span {
+  color: aqua;
+  font-size: 150px;
+  place-content: center;
+  grid-area: 1/-1;
+  background-color: brown;
+  border-radius: 6px;
+}
+
+.fotoGin1 {
+  grid-area: 2/1;
+  width: 100%;
+}
+.fotoGin2 {
+  grid-area: 3/1;
+  width: 100%;
+}
+
+.fotoCaneca1 {
+  grid-area: 2/2;
+  width: 100%; 
+}
+
+.fotoCaneca2 {
+  grid-area: 3/2;
+  width: 100%; 
+}

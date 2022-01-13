@@ -1,0 +1,29 @@
+programa
+{
+	inclua biblioteca Util
+ --> u
+/*Soma de matrizes e salvar na terceira*/
+	
+	funcao inicio()
+	{
+		inteiro m1[2][4],m2[2][4],m3[2][4]
+
+		para (inteiro x=0;x<2;x++){
+			para (inteiro y=0;y<4;y++){
+				m1[x][y] = u.sorteia(1, 5)
+			}
+		}
+
+		para (inteiro x=0;x<2;x++){
+			para (inteiro y=0;y<4;y++){
+				m2[x][y] = u.sorteia(1, 5)
+			}
+		}
+
+		para (inteiro x=0;x<2;x++){
+			para (inteiro y=0;y<4;y++){
+				m3[x][y] = m1[x][y] + m2[x][y]
+			}
+		}
+	}
+}

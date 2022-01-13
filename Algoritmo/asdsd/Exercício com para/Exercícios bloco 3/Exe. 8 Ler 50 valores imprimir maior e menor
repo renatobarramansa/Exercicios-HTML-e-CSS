@@ -1,0 +1,25 @@
+programa
+{
+/*escreva um algoritmo que leia 5 valores e encontre o maior e o menor deles e mostre o resultado*/	
+
+	funcao inicio()
+	{
+		inteiro n1,x,maior=0, menor=0, aux
+
+		para (x=1;x<=5;x++) {
+			escreva ("Digite o ",x,"° número : ")
+			leia (n1)	
+
+			se ( maior < n1 ){
+				maior = n1
+			}
+			
+			se (menor >= maior ){
+				menor = n1
+			}
+			
+		}
+		escreva ("maior : ",maior)
+		escreva ("menor : ",menor)
+	}
+}

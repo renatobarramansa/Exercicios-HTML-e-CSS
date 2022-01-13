@@ -1,0 +1,52 @@
+programa
+
+{
+/*Faça um algoritmo que solicite a digitação de 10 mumeros reais.
+Depois disso o programa deve  imprimir.
+a) a lista dos dez números digitados;
+b) uma mensagem informando qual foi o maior número digitado
+c) uma mensagem informando qual foi o menor número digitado;
+d)uma mensagem informando a média dos números digitados
+e)uma mensagem informando a quantidade de numeros digitados, maiores que 
+a média;
+f) uma mensagem informando a quantidade de números digitados menores que a média
+uma*/	
+inclua biblioteca Util -->u
+
+	funcao inicio()
+	{
+		inteiro vetNum [10], x, maior=0, menor=200, media=0, contMaiorMedia=0, contMenorMedia=0, contmedia=0, res=0, sort
+
+		para (x=0;x<10;x++){
+			sort = u.sorteia(1, 100)			
+			vetNum[x] = sort
+
+			se (maior<vetNum[x]){
+				maior = vetNum[x]
+			}
+
+				se (menor>vetNum[x]){
+				menor = vetNum[x]
+			}
+		
+		}
+			para (inteiro m=0;m<10;m++){
+			contmedia++
+			media = media + vetNum[m]
+			res = media/contmedia
+			}
+			
+			
+			
+			para (inteiro z=0;z<10;z++) {
+				se (vetNum[z] > res ){
+				contMaiorMedia++
+			}
+			senao {
+				contMenorMedia++
+			}	
+			}
+			
+		
+	}
+}

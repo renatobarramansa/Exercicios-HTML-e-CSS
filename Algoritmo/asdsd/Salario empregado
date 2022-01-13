@@ -1,0 +1,18 @@
+programa
+{
+/* Faça um algoritmo que leia o valor que um funcionário ganha por hora e o número de horas
+trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
+*/	
+	funcao inicio()
+	{
+		real salHora, numHoras, salario
+
+		escreva ("Digite o valor da hora trabalhada : ")
+		leia (salHora)
+		escreva ("Digite o número de horas trabalhadas : ")
+		leia (numHoras)
+		salario = salHora*numHoras
+		escreva ("\nO total a ser recebido no final do mês será :",salario)
+		
+	}
+}

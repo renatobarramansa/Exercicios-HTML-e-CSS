@@ -1,0 +1,53 @@
+programa
+{
+/*calcular o somatório dos números ímpares e a média dos números pares*/	
+	funcao inicio()
+	{
+		inteiro n, x, vetor[10]
+
+		escreva ("Digite um número")
+		leia (n)
+
+		para ( x=0;x<10;x++){
+			vetor[x] = n
+			n++
+		}
+		x=10
+
+		escreva ("A soma dos números pares do intervalo é :", soma(vetor, x))
+		escreva ("\nA média dos números ímpares do intervalo é :", media(vetor, x))
+
+		
+		
+	}
+
+	funcao inteiro soma (inteiro vetor[], inteiro n){
+		
+		inteiro somatorio=0
+		
+		para (inteiro x=0;x<10;x++){			
+			se (vetor[x] % 2 ==0){
+			somatorio = somatorio + vetor[x]
+			}			
+		}
+		retorne somatorio
+		}
+
+	funcao inteiro media (inteiro vetor[], inteiro n){
+	
+		inteiro med = 0, cont=0
+		
+		para (inteiro x=0;x<10;x++){			
+			se (vetor[x] % 2 !=0){
+			cont++			
+			med = (med + vetor[x])
+			}			
+			
+		}
+		med = med/cont
+		retorne med
+		}
+
+		
+		
+	}

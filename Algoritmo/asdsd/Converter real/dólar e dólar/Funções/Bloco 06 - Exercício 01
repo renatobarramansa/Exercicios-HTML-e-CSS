@@ -1,0 +1,27 @@
+programa
+{
+/*Bloco 06 - exercício 01 - Escreva um algoritmo para calcular e mostrar a área de uma circunferência. Para isso, o
+algoritmo deverá ler o valor do raio (r).
+a = π . r2
+*/
+
+	
+	funcao inicio()
+	{
+		inteiro r
+
+		escreva ("Digite o valor do raio")
+		leia (r)
+
+		escreva ("O valor do raio é: ",raio (r))
+
+		
+	}
+
+	funcao real raio (inteiro r){
+		real py = 3.14, a=0.0
+		a = py * r*2
+		retorne a
+		
+		}
+}

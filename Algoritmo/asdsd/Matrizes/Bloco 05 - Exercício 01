@@ -1,0 +1,28 @@
+programa
+{
+	inclua biblioteca Util
+ -->u
+
+/*1. Escreva um algoritmo que leia os elementos de uma matriz 5x5 de inteiros. Ao final, o algoritmo
+deverá mostrar a soma de todos os elementos.*/	
+	funcao inicio()
+	{
+		inteiro matriz [5][5], sort, somaVet=0
+
+		para (inteiro x=0;x<5;x++){
+			para (inteiro y=0;y<5;y++){
+				matriz[x][y] = u.sorteia(1, 5)
+				somaVet = somaVet + matriz[x][y]
+			}
+		}
+
+		para (inteiro z=0;z<5;z++){
+			para (inteiro q=0;q<5;q++){
+				escreva (matriz [z][q],"\t")
+			}
+			escreva ("\n")
+		}
+		escreva (" A soma dos elementors dos vetores é :",somaVet)
+	}
+	
+}

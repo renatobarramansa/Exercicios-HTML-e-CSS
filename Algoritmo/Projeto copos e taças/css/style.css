@@ -1,0 +1,22 @@
+.colunas {
+  display: grid;
+  grid-template-columns: repeat(5, auto);  
+  border: solid 1px;
+  border-right: solid 1px ;
+}
+
+h1{
+  grid-area: 1/3;  
+  place-self: center;
+}
+
+.home {
+  margin: 0px;
+  grid-area: 2/1;
+  background-color: blueviolet;  
+}
+
+.foto {
+  margin: 0px;
+  grid-area: 2/2;
+}

@@ -1,0 +1,24 @@
+programa
+{
+/*Crie um algoritmo que gere os elementos de uma PA pedindo ao usuário o número de elementos da PA
+sua razão e seu elemento inicial.
+Lembrando que a fórmula n-ésimo termo da PA é: an = a1 + (n-1) * razão */	
+	funcao inicio()
+	{
+		inteiro elemInicial, numeroElementosPA,razao, pa
+
+		escreva ("Digite o elemento inicial : ")
+		leia (elemInicial)
+		escreva ("Digite o número de elementos : ")
+		leia (numeroElementosPA)
+		escreva ("Digite a razão : ")
+		leia (razao)
+		
+		para (inteiro n=1;n<=numeroElementosPA;n++) {
+			pa = elemInicial + (n-1)*razao	
+			escreva (n,"° termo : ",pa,"\n")
+			
+		}
+		
+	}
+}

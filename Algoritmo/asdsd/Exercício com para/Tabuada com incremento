@@ -1,0 +1,15 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro x, mult, n1
+
+		escreva ("Digite um número para fazer a tabuada do maior para o menor ")
+		leia (n1)		
+		para (x=10; x>=1; x--){
+			mult = n1 * x
+			escreva (n1,"x", x, "=", mult, "\n")
+		}
+	}
+}

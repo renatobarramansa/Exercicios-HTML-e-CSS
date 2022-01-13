@@ -1,0 +1,25 @@
+programa
+{
+/*A turma C é composta de 60 alunos, e a turma D de 20 alunos. Escreva um algoritmo que leia o
+percentual de alunos reprovados na turma C, o percentual de aprovados na turma D, calcule e
+escreva:
+a) O número de alunos reprovados na turma C.
+b) O número de alunos reprovados na turma D.
+c) A percentagem de alunos reprovados em relação ao total de alunos das duas turmass.*/
+	funcao inicio()
+	{
+		real percentualTurmaC, percentualTurmaD
+		inteiro turmaC = 60, turmaD = 20, totalReprovadosC, totalreprovadosD, total
+
+		escreva ("Digite o percentual de alunos reprovados na turma C : ")
+		leia (percentualTurmaC)
+		percentualTurmaC = (percentualTurmaC/100)*turmaC
+
+		escreva ("Digite o percentual de alunos reprovados na turma D : ")
+		leia (percentualTurmaD)
+		percentualTurmaD = (percentualTurmaD/100)*turmaD
+
+		
+
+		escreva (percentualTurmaC)
+		escreva (percentualTurmaD)

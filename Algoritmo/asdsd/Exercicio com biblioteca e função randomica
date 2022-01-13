@@ -1,0 +1,34 @@
+programa
+{
+	inclua biblioteca Util --> u
+	inclua biblioteca Texto -->t
+	inclua biblioteca Sons -->a		
+	inclua biblioteca Matematica
+ --> m
+	
+	funcao inicio()
+	{
+		inteiro numero, maior=0, menor=100, sorteio, som
+
+		escreva ("digite um numero")
+		leia(numero)
+
+		para (inteiro x=1;x<=200;x++){
+			numero++
+			se (maior<=numero)			
+			maior = numero
+		
+
+			se (menor>=numero)
+			menor = numero
+			escreva (numero,"\n")
+		}
+	//	limpa()
+		sorteio = u.sorteia(menor, maior)
+		//som = a.liberar_som(C:\Users\Renato\Music)
+	//	escreva ("O numero sorteado foi :",sorteio)
+	escreva ("\n",menor,"\n",maior,"\n", sorteio,"\n")
+	
+		
+	}
+}

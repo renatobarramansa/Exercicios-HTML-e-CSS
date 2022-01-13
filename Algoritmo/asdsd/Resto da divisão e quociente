@@ -1,0 +1,16 @@
+programa
+{
+/*Desenvolva um algoritmo que receba um valor numérico inteiro, calcule e mostre qual o
+quociente e o resto da divisão desse número por 3.*/	
+	funcao inicio()
+	{
+		inteiro n1, quo, res
+
+		escreva ("Digite um número : ")
+		leia(n1)
+		quo=n1/3
+		res = n1 % 3
+
+		escreva ("O quociente é : ", n1, "\nO resto da divisão é: ", res)
+	}
+}

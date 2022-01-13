@@ -1,0 +1,44 @@
+programa
+{
+/*Elabore um algoritmo que mostre um menu com as seguintes opções:
+0 - Sair
+1 - Dar boas vindas
+2 - Dar Oi
+3 - Repetir o menu;
+4 - Ler mais uma vez o menu*/
+	
+	funcao inicio()
+	{
+		inteiro n1
+
+		faca{
+			
+		
+		escreva ("====================== Menu ======================\n")
+		escreva (" 0 - Sair\n")
+		escreva (" 1 - Dar boas vindas\n")
+		escreva (" 2 - Dar Oi\n")
+		escreva (" 3 - Repetir o menu\n")
+		escreva (" 4 - Ler mais uma vez o menu\n")
+		escreva ("==================================================\n")
+		escreva ("Digite a opção desejada : ")
+		leia (n1)
+//		limpa ()
+
+		escolha (n1){
+			caso 1:
+			escreva ("Boas vindas\n")
+			pare
+
+			caso 2:
+			escreva ("Oi\n")
+
+			caso contrario:
+			escreva ("Opção incorreta:\n")
+		}
+
+		} enquanto (n1!=0)
+
+		
+	}
+}

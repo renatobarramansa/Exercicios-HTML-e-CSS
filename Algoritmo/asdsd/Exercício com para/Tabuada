@@ -1,0 +1,17 @@
+programa
+{
+/*Primeiro exercicio com repetição para,
+com tabuada*/	
+	funcao inicio()
+	{
+		inteiro n1, x, mult
+		
+		escreva ("Digite o número que deseja realizar a tabuada : ")
+		leia(n1)
+		para (x=1;x<=10;x++){			 
+			 mult = n1 * x	 
+			escreva (n1, "x", x," = ",mult,"\n")
+						
+		}
+	}
+}

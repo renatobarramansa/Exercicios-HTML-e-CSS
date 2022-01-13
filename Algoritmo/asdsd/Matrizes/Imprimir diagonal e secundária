@@ -1,0 +1,29 @@
+programa
+/*IMprimir uma diagonal principal e secundária de uma matriz*/
+{
+	inclua biblioteca Util
+ -->u	
+	funcao inicio()
+{
+		
+		inteiro matriz [5][5]
+			para (inteiro x=0;x<5;x++){
+				para (inteiro y=0;y<5;y++){
+					matriz[x][y] = u.sorteia(1, 99)
+					escreva (matriz[x][y],",")
+				}
+				
+					escreva ("\n")
+			}
+
+					escreva ("\nDiagonal principal\n")
+			para (inteiro x=0;x<5;x++){				
+					escreva (matriz[x][x],",")							
+			}
+
+			escreva ("\n\nDiagonal secundária\n")
+			para (inteiro x=0;x<5;x++){				
+					escreva (matriz[x][5-1-x],",") // No exemplo o "5" é o tamanho da matriz o "1" é para achar os índices válidos da coluna, o "x" seria para decrementar as colunas							
+			}
+	}
+}

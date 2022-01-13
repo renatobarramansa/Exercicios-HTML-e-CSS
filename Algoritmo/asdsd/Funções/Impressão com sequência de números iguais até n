@@ -1,0 +1,36 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro n, result
+
+		escreva ("Digite um numero")
+		leia (n)
+			
+		
+		impr(n)
+
+	}
+
+	funcao impr (inteiro n){
+		
+		inteiro m, numDescre
+		m=n
+
+		para (inteiro x=0;x<m;x++){
+			numDescre = m-(n-1)	
+			n--
+				para (inteiro y=0;y<=x;y++){				
+				escreva (numDescre)
+			
+			}
+			escreva ("\n")
+		}
+	}
+
+		
+	}
+
+	
+

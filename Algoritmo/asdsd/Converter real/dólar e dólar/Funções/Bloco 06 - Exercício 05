@@ -1,0 +1,40 @@
+programa
+{
+	inclua biblioteca Matematica
+ --> m
+/*5. Elabore um algoritmo que leia dois valores numéricos A e B. O algoritmo não deverá permitir
+que o valor de A seja maior que o valor de B. Caso os valores sejam válidos, apresentar o resultado
+da expressão A
+B
+.*/
+	
+real eq = 0.0
+	funcao inicio()
+	{
+		real a, b
+
+		escreva ("Digite o primeiro número")
+		leia (a)
+		escreva ("Digite o segundo número")
+		leia (b)
+
+		escreva ("O valor da equação é:",equacao(a, b))
+		
+	}
+
+	funcao real equacao (real a, real b){
+		
+		eq = m.potencia(a, b)
+		
+		enquanto (a>b){
+			escreva ("O valor de A, não pode ser maior que O valor de B.\n\nDigite o primeiro número")
+			leia (a)
+			escreva ("Digite o segundo número")
+			leia (b)
+			eq = m.potencia(a, b)
+		}
+		retorne eq
+
+		
+	}
+}

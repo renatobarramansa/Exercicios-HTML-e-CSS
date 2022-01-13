@@ -1,0 +1,42 @@
+programa
+{
+	inclua biblioteca Matematica --> m
+	
+
+/*Fazer uma equação do 2° grau utilizando funções*/
+	
+	real delta=0.0, bask=0.0, x1=0.0, x2=0.0
+	
+	funcao inicio()
+	{
+		real a, b, c
+
+		escreva ("Digite um valor para a : \n")
+		leia (a)
+		escreva ("Digite um valor para b : \n")
+		leia (b)
+		escreva ("Digite um valor para c : \n")
+		leia (c)
+
+		escreva (xLinha (a,b,c),"\n")
+		escreva (xBilinha(a, b, c),"\n")
+
+		
+			
+		}
+		funcao real xLinha (real a, real b, real c) {			
+			//funcao real Xlinha (real w, real y, real z){
+			delta = (b*b)- 4*a*c			
+			x1 = (-b + m.raiz(delta, 2.0))/2*a
+			retorne x1
+			//}
+			
+	
+		}
+
+		funcao real xBilinha (real a, real b, real c){
+			x2 = (-b - m.raiz(delta, 2.0))/2*a
+			retorne x2
+		}
+	
+}

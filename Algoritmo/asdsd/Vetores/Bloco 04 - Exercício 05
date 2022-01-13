@@ -1,0 +1,32 @@
+programa
+{
+/*5. Elabore um algoritmo que leia o nome, a quantidade e o valor de uma lista de 10 produtos. Ao
+final deverá calcular o subtotal de cada produto.*/
+	
+	funcao inicio()
+	{
+		cadeia nome ,vetNome [10]
+		inteiro qnt, vetQnt [10]
+		real valor,vetValor[10], subTotal, vetSubTotal[10]
+
+		para (inteiro x=0;x<10;x++){
+
+			escreva ("Digite o nome\n")
+			leia (nome)
+			limpa ()
+			
+			escreva ("Informe a quantidade\n")
+			leia (qnt)
+			limpa ()
+			
+			escreva ("Informe o valor unitário\n")
+			leia (valor)
+			limpa ()
+
+			vetNome[x] = nome
+			vetQnt [x] = qnt
+			vetValor [x] = valor
+			vetSubTotal [x] = vetValor [x] * vetQnt[x]
+		}
+	}
+}

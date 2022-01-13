@@ -1,0 +1,41 @@
+@@ -1,40 +0,0 @@
+programa
+{
+/*Faça um algoritmo que receba a idade, altura e peso de 10 pessoas. Calcule e mostre:
+a) a quantidade de pessoas com idade superior a 50 anos;
+b) a média das alturas das pessoas com idade entre 10 e 20 anos;
+c) a porcentagem de pessoas com peso inferior a 40 quilos entre todas as pessoas.*/	
+	funcao inicio()
+	{
+		inteiro idade,x, contIdade=0, medContPeso=0, contAltura=0, porcPeso=0
+		real altura,peso, medAltura = 0.0, somaaltura=0.0, contPeso=0.0
+
+		para (x=1;x<=4;x++) {
+		
+		escreva ("Informe a idade : ")
+		leia (idade)
+		escreva ("Informe a altura : ")
+		leia (altura)
+		escreva ("Informe o peso : ")
+		leia (peso)
+
+		se (idade>50){
+			contIdade++
+		}
+
+		se (idade >=10 e idade <=20) {
+			contAltura++
+			somaaltura = somaaltura + altura
+			medAltura = somaaltura/contAltura
+		}
+
+		se (peso < 40) {
+			contPeso++
+			porcPeso =contPeso * 0.1
+			
+			
+		}
+		
+		}
+	}
+}

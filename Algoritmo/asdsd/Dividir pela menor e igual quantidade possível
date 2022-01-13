@@ -1,0 +1,21 @@
+programa
+{
+	
+/*dividir pela menor e igual quantidade possível*/
+	funcao inicio()
+	{
+		inteiro n_alunos, ta, tb, tc
+
+		escreva ("\nTurma de alunos : ")
+		leia (n_alunos)
+
+		ta = n_alunos/3
+		n_alunos = n_alunos -ta 
+
+		tb = n_alunos/2
+		n_alunos = n_alunos - tb
+
+	
+		tc = n_alunos
+	}
+}

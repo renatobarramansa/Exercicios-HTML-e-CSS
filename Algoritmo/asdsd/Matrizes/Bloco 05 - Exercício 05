@@ -1,0 +1,29 @@
+programa
+{
+	inclua biblioteca Util -->u
+/*5. Escreva um algoritmo que leia um vetor de 15 elementos do tipo inteiro. Após, calcular e
+mostrar:
+a) o maior elemento do vetor e qual a posição que ele ocupa no vetor.
+b) o menor elemento do vetor e qual a posição que ele ocupa no vetor.*/
+	
+	funcao inicio()
+	{
+		inteiro vetor[15], maior=0, menor=200, posMaior=0, posMenor=0
+
+		para (inteiro x=0;x<15;x++){
+			vetor[x] = u.sorteia (1,100)
+
+				se (maior < vetor[x]){
+					maior = vetor [x]					
+					posMaior = x
+				}
+
+				se (menor > vetor [x]){
+					menor = vetor [x]					
+					posMenor = x
+				}
+		}
+
+		escreva ("O maior número do vetor é: ",maior," e a posição do vetor é a:", posMaior,"\nO menor número do vetor é: ",menor," e a posição do vetor é a:", posMenor)
+	}
+}

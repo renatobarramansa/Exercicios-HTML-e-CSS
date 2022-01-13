@@ -1,0 +1,46 @@
+programa
+{
+/*12. Faça um algoritmo que leia 20 números inteiros e positivos e calcule o produto dos números
+pares e o somatório dos ímpares. Além disso, deve-se verificar a quantidade de pares e ímpares
+informados. O algoritmo não poderá aceitar valores negativos, nem zero. O fim da leitura será
+indicado pelo número 0.*/	
+
+	funcao inicio()
+	{
+		inteiro n1, res, prodPares = 1, somImp=0
+		
+				
+		para(inteiro x=1;x<=3;x++) {			
+		
+		escreva ("Digite um número")
+		leia (n1)
+		
+		enquanto (n1 !=0) {
+			
+		
+		se (n1<0) {
+			escreva ("Você deve digitar um número positivo\n")
+			x--
+		
+		} senao {
+			escreva ("Você deve digitou um número positivo\n")
+
+			res = n1 % 2
+
+			se (res ==0) {
+				prodPares = prodPares * n1
+			}
+
+			se (res !=0){
+				somImp = somImp + n1
+			}
+
+			
+		}
+
+		}
+		
+}
+		
+	}
+}

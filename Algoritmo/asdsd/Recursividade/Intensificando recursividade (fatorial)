@@ -1,0 +1,25 @@
+programa
+{
+	
+	/*Resolver um fatorial com recursividade*/	
+	funcao inicio()
+{
+		inteiro n
+
+		escreva ("Digite um número")
+		leia (n)
+		escreva ("\nO valor do fatorial de ",n," é : ",fatorial(n))	
+	}
+
+	funcao inteiro fatorial (inteiro n){
+		
+
+		se (n==0 ou n==1){
+			retorne 1
+		}
+		senao {
+			n = n * fatorial(n-1)
+			retorne n
+		}
+	}
+}

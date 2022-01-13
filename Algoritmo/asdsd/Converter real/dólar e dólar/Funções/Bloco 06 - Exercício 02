@@ -1,0 +1,29 @@
+programa
+{
+/*2. Elabore um algoritmo para calcular e mostrar o volume de uma lata. Dessa forma, deve-se ler o
+valor do raio (r) e altura (a) da lata.
+V = π . r2 . a
+*/
+	
+	funcao inicio()
+	{
+		real r, a
+
+		escreva ("Digite o valor do raio : ")
+		leia (r)
+		escreva ("Digite a altura : ")
+		leia (a)
+
+		escreva ("O volume é igual a: ",volume (r,a))
+		
+	}
+
+	funcao real volume (real r, real a) {
+		real vol = 0.0
+		vol = 3.14*r*2*(3.14 * r*2)
+		retorne vol
+		
+	}
+
+	
+}

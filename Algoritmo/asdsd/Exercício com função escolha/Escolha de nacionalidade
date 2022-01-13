@@ -1,0 +1,59 @@
+programa
+{
+/*Escreva um algoritmo que leia a cidadania de uma pessoa, codificada da seguinte forma:
+1 – Brasileiro,
+2 – Alemão,
+3 – Inglês,
+4 – Italiano,
+5 – Espanhol e
+18
+6 – Francês.
+O algoritmo deverá mostrar na tela a língua nativa do cidadão, de acordo com a cidadania
+selecionada. Caso não seja informado nenhum código válido, informar na tela que a língua nativa
+da pessoa não pode ser verificada.*/	
+	funcao inicio()
+	{
+		inteiro cidadania
+
+		escreva ("======================Escolha a cidadania=========================\n")
+		escreva ("1. Brasileiro\n")
+		escreva ("2. Alemão\n")
+		escreva ("3. Inglês\n")
+		escreva ("4. Italiano\n")
+		escreva ("5. Espanhol\n")
+		escreva ("6. Francês\n")
+		escreva ("==================================================================\n")
+		escreva ("Digite o número correspondente a cidadania :\n")
+		leia (cidadania)
+		
+		escolha (cidadania){
+			caso 1:
+			escreva ("A cidadania escolhida foi Brasileiro")
+			pare
+
+			caso 2:
+			escreva ("A cidadania escolhida foi Alemã")
+			pare
+
+			caso 3:
+			escreva ("A cidadania escolhida foi Inglês")
+			pare
+
+			caso 4:
+			escreva ("A cidadania escolhida foi Italiano")
+			pare
+
+			caso 5:
+			escreva ("A cidadania escolhida foi Espanhol")
+			pare
+
+			caso 6:
+			escreva ("A cidadania escolhida foi Francês")
+			pare
+
+			caso contrario:
+			escreva ("Opção inválida:")
+			
+		}
+	}
+}

@@ -1,0 +1,36 @@
+programa
+{
+	//Converter real em dólar e dólar em real
+	funcao inicio()
+	{
+		real valordolar, cotacaoDolar, convertido, valorreal
+		inteiro n1
+
+		escreva ("Digite a cotação do dólar: ")
+		leia(cotacaoDolar)
+		limpa()
+		escreva ("Digite a opção desejada:Sendo 1 para converter dólar em real, ou opção 2 para converter real em dólar: \n\n[1]dólar/real\n[2]real/dólar\n")
+		leia(n1)
+		limpa()
+			
+			se(n1==1){
+			escreva ("Digite o valor que você possui em dólar:\n")
+			leia(valordolar)
+			convertido = valordolar*cotacaoDolar
+			escreva ("O valor convertido para real é: ",convertido)
+			}
+
+			se (n1==2){
+			escreva ("Digite o valor que você possui em real:\n")
+			leia(valorreal)
+			convertido = valorreal/cotacaoDolar
+			escreva ("O valor convertido para dólar é:\n ",convertido)
+			}
+
+			se (n1!=1 e n1!=2){
+				escreva ("Você digitou uma opção incorreta")
+			}
+		
+		
+	}
+}

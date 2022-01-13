@@ -1,0 +1,25 @@
+programa
+{
+	inclua biblioteca Util
+ -->u
+/*Ler uma matriz 3 x 5 e contar as vogais*/
+	
+	funcao inicio()
+	{
+		caracter matriz[3][5]
+		inteiro contVogal=0
+
+		para (inteiro x=0;x<3;x++){
+			para (inteiro y=0;y<5;y++){
+			escreva("Digite uma letra")
+			leia (matriz[x][y])
+				se (matriz[x][y]== 'a' ou matriz[x][y]== 'e' ou matriz[x][y]== 'i' ou matriz[x][y]== 'o' ou matriz[x][y]== 'u'){
+					 contVogal++
+				}
+			}
+		}
+
+		escreva ("A quantidade de vogais é :",contVogal)
+		
+	}
+}

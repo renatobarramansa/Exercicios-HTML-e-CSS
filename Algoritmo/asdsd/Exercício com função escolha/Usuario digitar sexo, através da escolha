@@ -1,0 +1,30 @@
+programa
+{
+/*Exercício com a função escolha*/
+	
+	funcao inicio()
+	{
+		caracter sexo
+
+		escreva ("\nDigite M para masculino\nF para feminino")
+		leia (sexo)
+		
+		escolha (sexo) {
+			caso 'M':
+			escreva ("A opção digitada é para o sexo masculino")
+			pare
+
+			caso 'F':
+			escreva ("A opção digitada é para o sexo feminino")
+			pare
+
+			caso contrario:
+			escreva ("opção incorreta")
+		}
+				
+	}
+			
+}
+		
+		
+	

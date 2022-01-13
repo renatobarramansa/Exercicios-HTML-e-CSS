@@ -1,0 +1,36 @@
+programa
+{
+	
+/*10. Ler uma matriz 5X5 e gerar outra em que cada elemento 
+ * é o cubo do elemento respectivo na
+matriz original. Imprima depois esta nova matriz.*/
+	
+	inclua biblioteca Matematica
+ -->m
+	inclua biblioteca Util -->u
+	
+
+
+	
+	funcao inicio()
+	{
+		real matriz1[5][5]
+		real matriz2[5][5]
+		
+
+		para (inteiro x=0;x<5;x++){
+			para (inteiro y=0;y<5;y++){
+				matriz1[x][y] = u.sorteia(1, 5)
+			}
+		}
+
+		para (inteiro x=0;x<5;x++){
+			para (inteiro y=0;y<5;y++){
+			matriz2[x][y] = m.potencia(matriz1[x][y], 3)
+					
+			}
+
+		}
+		
+	}
+}

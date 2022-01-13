@@ -1,0 +1,28 @@
+programa
+{
+	/*9.Escreva um algoritmo recursivo para o seguinte problema: encontre o valor de um elemento
+máximo de um vetor de inteiros. É claro que o problema só faz sentido se n ≥ 1.*/
+	inclua biblioteca Util
+ -->u
+	
+	funcao inicio()
+	{
+		inteiro vetor [10]
+
+		para (inteiro x=0;x<10;x++){
+			vetor[x] = u.sorteia (1,10)
+		}
+
+		escreva ("A soma do vetor é:", chamaVet(vetor, 10))
+	}
+
+	funcao inteiro chamaVet (inteiro vetor[], inteiro tamanho) {
+		
+		se (tamanho <=1){
+			retorne vetor[0]
+		
+		}senao{
+			retorne vetor [tamanho-1] + chamaVet(vetor, tamanho-1)
+		}
+	}
+}

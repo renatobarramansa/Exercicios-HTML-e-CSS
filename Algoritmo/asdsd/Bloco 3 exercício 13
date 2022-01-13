@@ -1,0 +1,71 @@
+programa
+{
+
+// Alteração feita, fazendo com a estrutura de enquanto, para validação dos inputs
+
+/*/*13. Foi realizada uma pesquisa entre os habitantes de uma região. Sendo assim, foram coletados os
+dados de idade, sexo (M/F) e salário.Encerre a entrada de dados quando for digitada uma idade
+zero. Faça um algoritmo que informe:
+a) a média de salário dos homens;
+b) a média de salário das mulheres;
+c) a média de salário do grupo;
+d) o homem mais velho;
+e) a mulher mais nova;*/		
+
+	funcao inicio()
+	{
+		inteiro idade=1, Hvelho=0, Mnova=200, contHomem=0, contMulher=0, contMedSalGr = 0
+		real salario=0.0,medSalHom=0.0, medSalMul=0.0, medSalGru=0.0, medTotSal=0.0
+		caracter sexo
+
+
+			enquanto (idade!=0) {	
+			escreva ("Informe a idade :")
+			leia (idade)
+			se (idade ==0) { // Sai do programa se for digitado o zero na idade			
+			pare }
+
+			escreva ("Informe o sexo :")
+			leia (sexo)
+
+			enquanto (sexo != 'M' e sexo !='F'){ // Impede de ser digitado outra letra que não seja a parametrizada
+			escreva ("Você digitou o caracter incorreto\nDigite M para homem ou F para mulher:\n")
+			escreva ("Informe o sexo :")
+			leia (sexo)
+			}
+			
+			escreva ("Informe o salário :")
+			leia (salario)	
+			contMedSalGr++
+			medTotSal = medTotSal + salario
+			
+			enquanto (salario <1){ // Controle caso queira colocar o valor mínimo do salário mínimo
+			escreva ("O salário digitado não corresponde ao valor do salário mínimo aceito\nDigite novamente o salário : ")
+			leia (salario)
+				
+			}
+			
+
+			se (sexo =='M') {
+				se (idade>Hvelho){ // Cálculo do homem mais velho
+				Hvelho = idade	
+				}				
+				contHomem++
+				medSalHom = (medSalHom+salario)/contHomem
+			}
+
+			senao {
+				se (idade<Mnova){ // Cálculo da mulher mais nova
+					Mnova = idade
+				}
+				contMulher++
+				medSalMul = (medSalMul+salario)/contMulher
+			}
+			
+			}
+			medSalGru = medTotSal/contMedSalGr
+			}
+
+
+
+	}

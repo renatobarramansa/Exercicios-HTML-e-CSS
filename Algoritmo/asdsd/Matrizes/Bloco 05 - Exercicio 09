@@ -1,0 +1,18 @@
+programa
+{
+	inclua biblioteca Util
+ -->u
+/*9. Faça um algoritmo para ler uma matriz 2X3 real e depois gerar e imprimir sua transposta (matriz
+3X2 equivalente).*/	
+	funcao inicio()
+	{
+		inteiro matriz[3][2], transp[2][3]
+
+		para  (inteiro x=0;x<3;x++){
+			para  (inteiro y=0;y<2;y++){	
+				matriz[x][y] = u.sorteia(1, 100)
+				transp[y][x] = matriz [x][y]
+			}
+		}
+	}
+}

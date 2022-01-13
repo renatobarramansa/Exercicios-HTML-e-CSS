@@ -1,0 +1,39 @@
+programa
+{
+/*Faça um algoritmo que leia o valor que 10 funcionários e salve em uma matriz [2][5] ganham por hora e o número de horas
+trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
+*/
+	
+	funcao inicio()
+	{
+		real m[2][5],m1[2][5], salario, hora
+		inteiro cont=0
+
+		para (inteiro x=0;x<2;x++){
+			para (inteiro y=0;y<5;y++){
+				cont++
+				escreva ("Digite o ",cont,"° salário : ")
+				leia (m[x][y])
+				escreva ("Digite as horas trabalhadas : ")
+				leia (m1[x][y])
+			}
+		}
+
+		calculoSalarioHora(m, m1)
+	}
+
+	funcao calculoSalarioHora (real sal [][], real hor[][] ){
+		inteiro cont=0
+		para (inteiro x=0;x<2;x++){
+			para (inteiro y=0;y<5;y++){				
+				cont++
+				escreva ("\nO salário que o ",cont, "° receberá no final do mês é de : ", sal[x][y] * hor[x][y])
+			}
+		
+		}
+		
+		
+	}
+
+	
+}

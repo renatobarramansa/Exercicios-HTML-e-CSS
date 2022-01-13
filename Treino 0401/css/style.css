@@ -1,0 +1,23 @@
+body {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid2 {
+  display: grid;  
+}
+
+img {
+  max-width: 100%;
+ 
+}
+h1{  
+  grid-column: 1/-1;
+}
+span {
+  place-self: center;
+}

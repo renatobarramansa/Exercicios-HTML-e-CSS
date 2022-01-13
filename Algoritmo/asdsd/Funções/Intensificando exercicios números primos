@@ -1,0 +1,41 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro contPulaLinha=0
+		
+		para (inteiro x=1;x<=500;x++){
+			se (Eprimo(x)==1){
+				escreva (x,"\t")
+				contPulaLinha++
+			}
+
+			se (contPulaLinha == 10 ){
+				escreva ("\n")		
+				contPulaLinha=0
+			}
+		}
+		
+	}
+
+	funcao inteiro Eprimo (inteiro n){
+
+		inteiro divisores =0
+
+		para (inteiro x=1;x<=n;x++){
+			se (n % x == 0){
+				divisores++
+			}
+		}
+
+		se (divisores ==2){
+			retorne 1
+		}
+
+		senao {
+			retorne 0
+		}
+		
+	}
+}

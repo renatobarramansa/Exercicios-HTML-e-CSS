@@ -1,0 +1,47 @@
+programa
+{
+/*Escreva um algoritmo que receba o nome, idade, sexo e salário fixo de um funcionário. Calcule e
+mostre o nome e salário líquido do funcionário de acordo com a tabela:
+SEXO IDADE ABONO
+M >= 30 100,00
+< 30 50,00
+F >= 30 200,00
+< 30 80,00
+*/
+	
+	funcao inicio()
+	{
+
+	cadeia nome
+	inteiro idade
+	caracter sexo
+	real salarioFixo
+	
+		escreva("Digite o nome : ")
+		leia (nome)
+		escreva("Digite a idade : ")
+		leia (idade)
+		escreva("Digite o salário fixo : ")
+		leia (salarioFixo)
+		escreva("Digite 'M' para sexo masculino\nDigite 'F' para sexo feminino : ")
+		leia (sexo)
+
+		se (sexo == 'M' e idade>=30) {
+			salarioFixo = salarioFixo + 100
+			escreva ("abono de 100")
+		}senao se (sexo == 'M' e idade<30) {
+			salarioFixo = salarioFixo + 50
+			escreva ("abono de 50")
+		}
+
+		se (sexo =='F' e idade >=30){
+			salarioFixo = salarioFixo + 200
+			escreva ("abono de 200")
+		}senao se (sexo =='F' e idade<30){
+			salarioFixo = salarioFixo + 80
+			escreva ("abono de 80")
+		}
+		
+		
+	}
+}

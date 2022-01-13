@@ -1,0 +1,18 @@
+programa
+{
+/*Elabore um algoritmo que leia a medida em metros de frente e fundo de um número
+indeterminado de terrenos. O algoritmo deverá calcular e mostrar a área do terreno. Deverá parar
+somente quando a área de um terreno for inferior a 100 metros quadrados.*/	
+	funcao inicio()
+	{
+		real medFrente, medFundo, area=0.0
+
+		enquanto (area<=100) {
+		escreva ("Digite a medida de frente")
+		leia (medFrente)
+		escreva ("Digite a medida de fundos")
+		leia (medFundo)
+		area = medFrente * medFundo
+		}
+	}
+}

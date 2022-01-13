@@ -1,0 +1,54 @@
+programa
+{
+	inclua biblioteca Util -->u
+	
+/*Faça um programa para reservar assentos em uma sala de cinema.
+A sala possui 25 filas com 30 assentos cada fila. O programa deve funcionar
+enquanto houver assentos vagos ou não for digitadas duas coordenadas negativas*/
+
+	funcao inicio()
+{
+		inteiro matriz [3][10], x, y, linha=0, coluna=0, reserva=0
+		
+		para (x=0;x<3;x++){
+			para (y=0;y<10;y++){
+				matriz[x][y] = 0
+			}
+		}
+		
+			escreva("0,1,2,3,4,5,6,7,8,9\n")
+		
+			para (x=0;x<3;x++){
+				para (y=0;y<10;y++){
+			escreva (matriz[x][y],",")
+				}
+			escreva(" ",x,"\n")
+			}
+		
+		faca{		
+			escreva ("\nDigite o valor da linha : ")
+			leia(linha)
+				enquanto (linha >3 ou linha <0){
+					escreva ("A linha digitada está incorreta:\nDigite novamente o valor da linha")
+					leia(linha)
+					}
+				
+					escreva("\nDigite o valor da coluna : ")
+					leia(coluna)
+						
+				enquanto (coluna >9 ou coluna <0) {
+					escreva("\nA linha digitada está incorreta:\nDigite o valor da coluna : ")
+					leia(coluna)		
+				
+				}							
+					
+				se (matriz[linha][coluna]==1){					
+					escreva ("A linha digitada está incorreta:\nO local escolhido, já foi ocupado")
+				}
+				senao {
+					matriz[linha][coluna] = 1
+					reserva++
+				}
+			}enquanto (reserva <=30)	
+	}
+}

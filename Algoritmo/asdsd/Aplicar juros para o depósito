@@ -1,0 +1,19 @@
+programa
+{
+/*Desenvolva um algoritmo que receba o valor de um depósito em poupança, calcule e mostre o
+valor após um mês de aplicação na poupança, sabendo que a poupança rende 5% ao mês.*/	
+	funcao inicio()
+	{
+		inteiro dias
+		real deposito, valorAplicado, valorJurosDia = 0.5/30
+		
+		escreva ("Digite os dias :")
+		leia (dias)
+		escreva ("Deposite o valor do depósito : ")
+		leia(deposito)
+		valorAplicado = deposito + deposito * (valorJurosDia*dias)
+
+		escreva ("O valor com juros é: ", valorAplicado)
+		
+	}
+}

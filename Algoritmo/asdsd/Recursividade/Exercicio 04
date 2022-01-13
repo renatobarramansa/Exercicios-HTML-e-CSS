@@ -1,0 +1,30 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro vetor [10]
+
+		para (inteiro x=0;x<10;x++){
+			leia (vetor[x])
+		}
+
+		para (inteiro x=0;x<10;x++){
+			escreva ("[",vetor[x],"]\t")
+		}
+
+		escreva ("Soma dos itens do vetor",vet(vetor, 10))
+	}
+
+	funcao inteiro vet (inteiro vetor[], inteiro tam) {
+
+		
+		
+		se (tam <= 1) {
+			retorne vetor[0]
+		
+		}senao {
+			retorne vetor[tam-1] + vet(vetor, tam-1) // Em vetor [tam-1] ele esta pegando a última posição do vetor
+		}
+	}
+}

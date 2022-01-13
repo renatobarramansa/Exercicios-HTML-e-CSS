@@ -1,0 +1,32 @@
+programa
+{
+/*Uma loja vende bicicletas com um acrescimo de 50% sobre o seu preço de custo. 
+  Ela paga a cada vendedor dois salários mínimos mensais, mais uma comissão de 15% 
+sobre o preço de custo de cada bicicleta vendida, dividida igualmente entre eles.
+Escreva um algoritmo que leia o número de empregados da loja, o valor do salário mínimo, 
+, o preço de custo de cada bicicleta, o número de bicicletas vendidas, calcule e escreva:
+O salário final de cada empregado e o lucro (líquido) da loja*/	
+	funcao inicio()
+	{
+		inteiro numEmprLoja, bicVen
+		real salMin, custoBic, comissao, total_vendidas, sal_final, lucroLiq
+
+		escreva ("Digite o número de empregados")
+		leia (numEmprLoja)
+		escreva ("Digite o salário mínimo")
+		leia (salMin)
+		escreva ("Digite o número de bicicletas vendidas")
+		leia (bicVen)
+		escreva ("Digite o preço de custo de cada bicicleta")
+		leia (custoBic)
+
+		total_vendidas = (custoBic + (custoBic * 0.5)) * bicVen
+		comissao = (custoBic * 0.15) * bicVen
+		sal_final = 2*salMin + comissao/numEmprLoja
+		lucroLiq = total_vendidas - (sal_final * numEmprLoja)
+
+		escreva (sal_final)
+		escreva (lucroLiq)
+
+	}
+}

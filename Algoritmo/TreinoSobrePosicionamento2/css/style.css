@@ -1,0 +1,51 @@
+body{
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+span{
+  align-self: start;
+  background: coral;
+  grid-area: 2/1;
+  border-radius: 6px;
+}
+h1{
+  grid-column: 1/3;  
+  place-self: center;
+  background: chocolate;
+  border-radius: 4px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 45px;
+}
+.colunas {
+  display: grid;
+  grid-template-columns: repeat(2,400px);
+  grid-template-rows: repeat(2,auto);
+  gap: 5px;  
+  height: 600px;
+  place-content: right right;
+  
+  
+}
+
+.imagem {
+  width: auto;
+  grid-row: 2/6;
+  grid-column: span 2;
+  border-radius: 4px;
+}
+
+.musica {
+  text-decoration: none;
+  color: chocolate;
+  background: rgb(16, 192, 223);
+  padding: 20px 30px;
+  border-style: solid 3px ;
+  border-radius: 6px;  
+  grid-area: 3/1;
+  place-self: center;
+}
+
+.teste {
+  background: chartreuse;
+}

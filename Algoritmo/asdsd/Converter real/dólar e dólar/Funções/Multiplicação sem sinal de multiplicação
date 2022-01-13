@@ -1,0 +1,27 @@
+programa
+{
+/*Criar um programa que multiplique sem ter sinal de multiplicação*/
+	inteiro n1=0, n2=0, som=0
+	
+	funcao inicio()
+	{
+		segundoNumero()
+		primeiroNumero()
+		
+		
+		para (inteiro x=0;x<=n2;x++){
+			som = som+n1
+		}	
+	}
+
+		
+		funcao primeiroNumero (){
+			escreva ("Digite o primeiro numero")
+			leia(n1)	
+		}
+
+		funcao segundoNumero (){
+			escreva ("Digite o segundo numero")
+			leia(n2)	
+		}
+}

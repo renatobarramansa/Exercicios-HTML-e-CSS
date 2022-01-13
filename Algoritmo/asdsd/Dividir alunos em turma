@@ -1,0 +1,35 @@
+programa
+{
+	/*
+	 * Uma escola pretende dividir os alunos de uma série em 3 turmas
+	 * Entretanto deve ocorrer um equilíbrio no número de alunos em cada turma
+	 * Caso ocorra diferença no número de alunos, esta deverá ser a mínima
+	 * Escreva um algoritmo que leia o número de alunos da série, calcule e mostre
+	 * o número de alunos em cada turma
+	*/
+	funcao inicio()
+	{
+		inteiro alunos, turma1, turma2, turma3, divisaoTurma, res
+
+		escreva ("Digite o total de alunos")
+		leia (alunos)
+		divisaoTurma = alunos/3
+		res = alunos %3
+		turma1 = divisaoTurma
+		turma2 = divisaoTurma
+		turma3 = divisaoTurma
+
+			se (res != 0){
+				turma1 = turma1 + res
+				escreva ("\n",turma1,"\n",turma2,"\n",turma3)
+				
+			}senao {
+				escreva ("\n",turma1,"\n",turma2,"\n",turma3)	
+			}
+			
+		
+		
+		
+		
+	}
+}

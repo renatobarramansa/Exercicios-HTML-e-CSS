@@ -1,0 +1,32 @@
+programa
+{
+/*13. Ler uma matriz 4X3 real. Depois, mostre qual é o elemento armazenado em uma linha e coluna
+C fornecidos pelo usuário.*/
+	
+	funcao inicio()
+	{
+		inteiro matriz[4][3], linha, coluna
+
+		para (inteiro x=0;x<4;x++){
+			para (inteiro y=0;y<3;y++){
+				escreva ("Digite um número para ficar na linha ",x," e na coluna ",y)
+				leia(matriz[x][y])
+		}
+	}
+
+	
+		para (inteiro x=0;x<4;x++){
+			para (inteiro y=0;y<3;y++){
+				escreva (matriz[x][y],"\t")
+			}
+			escreva ("\n")
+		}
+		
+		escreva ("Escolha a linha que deseja mostrar :")
+		leia (linha)
+		escreva ("Escolha a coluna que deseja mostrar :")
+		leia (coluna)
+		escreva (matriz[linha][coluna])
+
+}
+}
