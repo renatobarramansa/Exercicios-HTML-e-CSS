@@ -1,0 +1,143 @@
+body {
+  margin: 0px;
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: #e7e7e7; */
+  background-image: linear-gradient(-85deg, lightblue, lightcoral);
+  gap: 3.75rem;
+  justify-items: center;
+}
+
+.topo {
+  text-align: center;
+  margin: 2.5rem;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.25rem;
+  gap: 0.625rem;
+  align-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10 20;
+  background: white;
+  margin: 2.5rem;
+  border-radius: 0.25rem ;
+  border: 4px solid transparent;
+  text-transform: uppercase;
+}
+nav a:hover {
+  border: olive solid 4px;
+}
+
+
+nav ul,
+li {
+  display: inline-block;
+  margin: 0px;
+  text-decoration: none;
+}
+
+
+
+nav a:focus {
+  border: rgb(236, 31, 31) solid 0.188rem;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 62.5rem;
+  gap: 0.625rem;
+  place-items: center;
+  text-align: right;
+}
+
+.conteudo a {
+  text-decoration: none;
+  background: orangered;
+  padding: 10 20;
+  color: white;
+  border-radius: 0.25rem;
+  position: relative;
+}
+section h2 {
+  text-transform: uppercase;
+  font-size: 3.75rem;
+  color: rgb(206, 198, 198);
+  background-image: url(/img/onda.svg);
+}
+
+.vantagem {
+  text-align: start;
+  background-color: white;  
+  background-size: 62.5rem;
+}
+
+.vantagem-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  text-align: start;
+  margin: 0.625rem;
+  gap: 20px 10px;
+  padding: 1.25rem;
+  text-transform: capitalize;
+}
+.vantagem-item h3:hover {
+  border-left: 2px solid red;
+}
+
+.vantagem-item p {
+  grid-column: 2;
+}
+
+.vantagem-item h3 {
+  margin: 0%;
+}
+
+.vantagem-item p {
+  margin: 0%;
+}
+
+.bicicleta {
+  max-width: 100%;
+  display: block;
+  position: relative;
+}
+
+h1 {
+  text-transform: capitalize;
+  
+}
+
+main {
+position: relative;
+}
+
+main a:hover {
+  background: crimson;
+  }
+
+main::before {
+  content: "";
+  display: inline-block;
+  height: 0.25rem;
+  width: 3.75rem;
+  background-color: red;
+  position: absolute;  
+  right: -2.5rem;
+  z-index: 1000;  
+  
+}
+
+footer{    
+  background: white;
+  width: 100%;
+  padding: 20;  
+  text-align: center;
+}

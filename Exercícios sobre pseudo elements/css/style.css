@@ -1,0 +1,47 @@
+h1{
+font-size:100px;
+color:red;
+margin:0%;
+position:relative;
+}
+
+
+
+ul{
+list-style:none;
+}
+
+li {
+font-size :2em;
+}
+
+h1::before {
+	content:"";
+	display:inline-block;
+	margin:10px;
+	width:50px;
+	height:4px;
+	background:blue;
+	position:absolute;
+	top:50px;
+	z-index:-1;
+
+}
+
+li {
+	display:flex;
+	align-items:center;
+}
+
+li::before {
+	content:"";
+	display:inline-block;
+	width:8px;
+	height:8px;
+	background:linear-gradient(#caf,#fff);
+	margin-right:10px;
+	border:2px solid lightgray;
+	border-radius:50%;
+
+	
+}

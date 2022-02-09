@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Exercicio 02 Refatorado</title>
+</head>
+
+<body>
+    <header>
+        <div class="topo">
+            <img class="topo" src="./img/bikcraft.svg" alt="Bicicleta Preta">
+        </div>
+
+        <nav class="menu" aria-label="primaria">
+            <ul>
+                <li><a href="/">Sobre</a></li>
+                <li><a href="/">Produtos</a></li>
+                <li><a href="/">Lojas</a></li>
+                <li><a href="/">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="conteudo">
+        <main aria-label="conteudo-principal">
+            <h1>bicicletas feitas a Mão</h1>
+            <p>A nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca.</p>
+            <a href="/">VER MAIS</a>
+        </main>
+        <img class="bicicleta" src="./img/bicicleta.jpg" alt="Bicicleta Preta">
+        <section aria-labelledby="vb">
+            <!--aria-labelledby = Para não haver informação redundante no leitor de tela-->
+            <h2 id="vb" class="subtitulo">vantagens bikcraft</h2>
+        </section>
+        <article aria-label="lista de produtos">
+            <div class="vantagem">
+
+                <div class="vantagem-item">
+
+                    <img src="./img/eletrica.svg" alt="">
+                    <h3>motor elétrico</h3>
+                    <p>Permite você viajar distâncias inimagináveis com sua bike</p>
+                </div>
+
+                <div class="vantagem-item">
+
+                    <img src="./img/velocidade.svg" alt="">
+                    <h3>40 KM</h3>
+                    <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
+                </div>
+
+                <div class="vantagem-item">
+                    <img src="./img/rastreador.svg" alt="">
+                    <h3>Rastreador</h3>
+                    <p>Rastreado e sistema ani-furto para garantir o seu sossego.</p>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+    </div>
+    <footer class="rodape">
+        <p>Bikcraft. Alguns Direitos Reservados.</p>
+    </footer>
+
+</body>
+
+</html>
